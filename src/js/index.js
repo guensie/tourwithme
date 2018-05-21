@@ -12,10 +12,12 @@ import 'bootstrap';
 import '../styles/index.scss';
 
 //import your own components
-import Layout from './Layout.jsx';
-
+//import Layout from './Layout.jsx';
+// import { App } from './views/Home.jsx';
+// import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
+import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
 //render your react application
 ReactDOM.render(
-    <Layout />,
+    <ExploreTourGuides />,
     document.querySelector('#app')
 );
