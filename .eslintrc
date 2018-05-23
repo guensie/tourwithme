@@ -20,7 +20,7 @@
         "functions": "ignore",
     }],
     "react/jsx-indent": ["error", 4],
-    "react/prop-types": [2]
+    "react/prop-types": [0]
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"]
 }

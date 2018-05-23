@@ -13,14 +13,14 @@ export class ExploreTourGuides extends React.Component {
     return (
         <div className="exploreTourGuides">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" id="twm" href="#">TWM</a>
+                <a className="navbar-brand" id="twm" href="/home">TWM</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-item nav-link active" href="#">Explore Tour Guides <span className="sr-only">(current)</span></a>
-                        <a className="nav-item nav-link" href="#">Become a Tour Guide</a>
+                        <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
+                        <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
                         <a className="nav-item nav-link" href="#">Login/Signup</a>
                         <a className="nav-item nav-link disabled" href="#">My Profile</a>
                     </div>
@@ -46,6 +46,7 @@ export class ExploreTourGuides extends React.Component {
                     <a className="dropdown-item" href="#">Age</a>
                     <a className="dropdown-item" href="#"># of guests</a>
                     <a className="dropdown-item" href="#">length of tour</a>
+                    <a className="dropdown-item" href="#">language</a>
                 </div>
             </div>
         
