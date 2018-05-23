@@ -20,9 +20,10 @@ export class BecomeATourGuide extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
-                        <a className="nav-item nav-link" href="becomeatourguide">Become a Tour Guide</a>
-                        <a className="nav-item nav-link" href="#">Login/Signup</a>
-                        <a className="nav-item nav-link disabled" href="#">My Profile</a>
+                        <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
+                        <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
+                        <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
+                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
                     </div>
                 </div>
             </nav>
@@ -30,7 +31,7 @@ export class BecomeATourGuide extends React.Component {
                 <div className="container" id="intro1">
                     <h1 className="display-4">Become a tour guide with TWM and share your passion for the city.</h1>
                     <p className="lead">With TWM you can make money on your own terms doing what you love.</p>
-                    <button type="button" className="btn btn-info">Sign Up Now</button>
+                    <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
                 </div>
             </div>
             <div className="jumbotrona">
@@ -55,7 +56,7 @@ export class BecomeATourGuide extends React.Component {
                     <div className="container"> 
                         <h1 className="display-4">What Tour With Me Covers</h1>
                         <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                        <button type="button" className="btn btn-info">Sign Up Now</button>
+                        <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
                     </div>
                 </div>
             </div>

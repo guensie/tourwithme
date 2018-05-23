@@ -14,49 +14,49 @@ export class TouristProfilePage extends React.Component {
         <div className="TouristProfilePage">
             <form>
                 <div className="namefield">
-                    <label for="nameinput">First Name:</label>
+                    <label htmlFor="nameinput">First Name:</label>
                     <input id="nameinput" type="text" className="namefield"></input>
-                    <label for="nameinput">Last Name:</label>
+                    <label htmlFor="nameinput">Last Name:</label>
                     <input id="nameinput" type="text" className="namefield"></input>
                 </div>
                 <div clasName="login">
                     <div className="email">
-                        <label for="emailinput">E-Mail:</label>
-                        <input id="emailinput" type="text" size="30" maxlength="45" className="emailfield"></input>
+                        <label htmlFor="emailinput">E-Mail:</label>
+                        <input id="emailinput" type="text" size="30" maxLength="45" className="emailfield"></input>
                     </div>
                     <div className="user">
                         <span>Username:
-                          <input type="text" className="password"></input>
+                            <input type="text" className="password"></input>
                         </span>   
                     </div>
                     <div className="password">
                         <span>Password:
-                         <input type="password" className="password"></input>
+                            <input type="password" className="password"></input>
                         </span>
                     </div>   
                 </div>   
                 <div className="gender">
-                    <label for="male">Male</label>
+                    <label htmlFor="male">Male</label>
                     <input id="male" type="radio" className="gender" value="m"></input>
-                    <label for="female">Female</label>
+                    <label htmlFor="female">Female</label>
                     <input id="female" type="radio" className="gender" value="f"></input>
                 </div>
                 <p>Prefered Lanaguage:
-            <select className="colorstyles">
-                <option value="English">English</option>
-                <option value="Spanish">Spanish</option>
-                <option value="French">French</option>
-            </select>
+                    <select className="colorstyles">
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                    </select>
                 </p>
                 <p>Prefered Currency:
-            <select className="colorstyles">
-                <option value="US Dollars">US$</option>
-                <option value="Pound">Pound</option>
-                <option value="Yen">Yen</option>
-            </select>
+                    <select className="colorstyles">
+                        <option value="US Dollars">US$</option>
+                        <option value="Pound">Pound</option>
+                        <option value="Yen">Yen</option>
+                    </select>
                 </p>
                 <div className="messagebox">
-                    <label for="messageinput">Describe Yourself:</label>
+                    <label htmlFor="messageinput">Describe Yourself:</label>
                     <textarea className="messagefield"></textarea>
                 </div> 
                 <div className="submit">

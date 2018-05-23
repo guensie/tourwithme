@@ -11,32 +11,32 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 export class TourguideSignUp extends React.Component {
   render() {
     return (
-       
-          <div id="TourguideSignup" className="tab-pane fade"> 
-              <form className="login-form">
-                <div className="form-group">
-                  <label for="exampleInputEmail1" class="text-uppercase">Full Name</label>
-                  <input type="text" className="form-control" placeholder=""></input>
-                </div>
-                <div className="form-group">
-                  <label for="exampleInputPassword1" className="text-uppercase">Password</label>
-                  <input type="password" class="form-control" placeholder=""> </input>
-                </div>
-                <div className="form-group">
-                  <label for="exampleInputPassword1" className="text-uppercase">Confirm Password</label>
-                  <input type="password" className="form-control" placeholder=""></input>
-                </div>
-                <div className="form-group">
-                  <label for="exampleInputPassword1" class="text-uppercase">Email Address</label>
-                  <input type="password" className="form-control" placeholder=""> </input>
-                </div>
-                <div className="form-check">
-                  <button type="submit" className="btn btn-login float-right">REGISTER</button>
-                </div>
-              </form>
+        <div>
+            <div id="TourguideSignup" className="tab-pane fade"> 
+                <form className="login-form">
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1" className="text-uppercase">Full Name</label>
+                        <input type="text" className="form-control" placeholder=""></input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1" className="text-uppercase">Password</label>
+                        <input type="password" className="form-control" placeholder=""> </input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1" className="text-uppercase">Confirm Password</label>
+                        <input type="password" className="form-control" placeholder=""></input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1" className="text-uppercase">Email Address</label>
+                        <input type="password" className="form-control" placeholder=""> </input>
+                    </div>
+                    <div className="form-check">
+                        <button type="submit" className="btn btn-login float-right">REGISTER</button>
+                    </div>
+                </form>
             </div>
         </div>
-       
+      
     );
   }
 }

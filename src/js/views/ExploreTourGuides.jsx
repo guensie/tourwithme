@@ -21,8 +21,9 @@ export class ExploreTourGuides extends React.Component {
                     <div className="navbar-nav">
                         <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
                         <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
-                        <a className="nav-item nav-link" href="#">Login/Signup</a>
-                        <a className="nav-item nav-link disabled" href="#">My Profile</a>
+                        <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
+                        <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
+                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
                     </div>
                 </div>
             </nav>
