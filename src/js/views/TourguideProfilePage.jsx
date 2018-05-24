@@ -11,78 +11,40 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 export class TourguideProfilePage extends React.Component {
   render() {
     return (
-        <div className="TourguideProfilePage">
-            <form>
-                <div className="namefield">
-                    <label htmlFor="nameinput">First Name:</label>
-                    <input id="nameinput" type="text" className="namefield"></input>
-                    <label htmlFor="nameinput">Last Name:</label>
-                    <input id="nameinput" type="text" className="namefield"></input>
-                </div>
-                <div clasName="login">
-                    <div className="email">
-                        <label htmlFor="emailinput">E-Mail:</label>
-                        <input id="emailinput" type="text" size="30" maxLength="45" className="emailfield"></input>
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <a className="navbar-brand" id="twm" href="/home">TWM</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav">
+                        <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
+                        <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
+                        <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
+                        <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
+                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
                     </div>
-                    <div className="user">
-                        <span>Username:
-                            <input type="text" className="password"></input>
-                        </span>   
+                </div>
+            </nav>
+            <div className="TourguideProfilePage">
+                <div className="card" style={{width: "18rem"}}>
+                    <img className="card-img-top" id="profileImage" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                    <div className="card-body">
+                        <p className="card-text">My experience: Join me to learn how to make authentic Argentinian empanadas. We will meet at my friends restaurant in Little Havana. After class we will enjoy Miami style cafecitos.</p>
                     </div>
-                    <div className="password">
-                        <span>Password:
-                            <input type="password" className="password"></input>
-                        </span>
-                    </div>   
-                </div>   
-                <div className="gender">
-                    <label htmlFor="male">Male</label>
-                    <input id="male" type="radio" className="gender" value="m"></input>
-                    <label htmlFor="female">Female</label>
-                    <input id="female" type="radio" className="gender" value="f"></input>
                 </div>
-                <p>Prefered Lanaguage:
-                    <select className="language">
-                        <option value="English">English</option>
-                        <option value="Spanish">Spanish</option>
-                        <option value="French">French</option>
-                    </select>
-                </p>
-                <p>Category:
-                    <select className="Category">
-                        <option value="Wine Tasting">Wine Tasting</option>
-                        <option value="Yoga Class">Yoga Class</option>
-                        <option value="Cooking Experience">Cooking Experience</option>
-                        <option value="Culture Walk">Culture Walk</option>
-                        <option value="Shopping with a Stylist">Shopping with a Stylist</option>
-                        <option value="Music Lessons">Music Lessons</option>
-                    </select>
-                </p>
-                <p>Prefered Price per Guest:
-                    <select className="currency">
-                        <option value="$5.00">$5.00</option>
-                        <option value="$10.00">$10.00</option>
-                        <option value="$15.00">$15.00</option>
-                    </select>
-                </p>
-                <p>Prefered Number of Guest:
-                    <select className="Number of Guest">
-                        <option value="Two">Two</option>
-                        <option value="Three">Three</option>
-                        <option value="Four">Four</option>
-                        <option value="Five">Five</option>
-                        <option value="Six">Six</option>
-                    </select>
-                </p>
-                <div className="messagebox">
-                    <label htmlFor="messageinput">Describe Yourself:</label>
-                    <textarea className="messagefield"></textarea>
-                </div> 
-                <div className="submit">
-                    <input type="submit"></input>
-                </div>
-            </form>
-            
+                <ul className="list-group">
+                    <li className="list-group-item">Length of tour: 1-2 hrs </li>
+                    <li className="list-group-item">Language(s): English, Spanish </li>
+                    <li className="list-group-item">Category: Cooking Experience  </li>
+                    <li className="list-group-item">Gender: Male </li>
+                    <li className="list-group-item">Cost: $15 </li>
+                    <li className="list-group-item">Number of guests: Two </li>
+                    <li className="list-group-item">Upcoming Tours: 0</li>
+                    <li><button type="button" className="btn btn-info">Edit Profile</button></li>
+                </ul>
+            </div> 
         </div>
       
 

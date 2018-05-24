@@ -38,7 +38,7 @@ export class BecomeATourGuide extends React.Component {
                 <div className="jumbotron2 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/346808/pexels-photo-346808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                     <div className="container">
                         <h1 className="display-4">What is Tour With Me?</h1>
-                        <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <p className="lead">Tour With Me is the best local tour company by locals for tourists.</p>
                         
                     </div>
                 </div>

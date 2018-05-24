@@ -22,7 +22,6 @@ export class App extends React.Component {
                         <div className="navbar-nav">
                             <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
                             <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
-        
                             <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
                             <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
                             <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
@@ -49,7 +48,7 @@ export class App extends React.Component {
                                 <span className="fa fa-star checked"></span>
                                 <span className="fa fa-star checked"></span>
                                 <p className="booknow">
-                                    <button type="button" className="btn btn-primary">Book Me</button>
+                                    <button onClick={() => this.props.history.push("/tourguideprofilepage")}>Book Me</button>
                                 </p>    
                             </div>
                         </div>
