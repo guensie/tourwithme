@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
@@ -17,11 +17,11 @@ class TourGuideCard extends React.Component{
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star"></span>
                     <p className="booknow">
-                        <button onClick={() => this.props.history.push("/paymentportal")} type="button" className="btn btn-primary">Book Me</button>
+                        <button onClick={() => this.props.history.push("/paymentportal")}>Book Me</button>
                     </p>   
                 </div>
             </div>
         );
     }
 }
-export default TourGuideCard;
+export default withRouter(TourGuideCard);

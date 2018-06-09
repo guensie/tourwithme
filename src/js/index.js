@@ -38,6 +38,7 @@ import { TouristProfilePage } from './views/TouristProfilePage.jsx';
 import { TourguideProfilePage } from './views/TourguideProfilePage.jsx';
 import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
+import { PaymentPortal } from './views/PaymentPortal.jsx';
 
 ReactDOM.render(
     <Layout />,
