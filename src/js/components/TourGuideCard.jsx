@@ -17,7 +17,7 @@ class TourGuideCard extends React.Component{
                     <span className="fa fa-star checked"></span>
                     <span className="fa fa-star"></span>
                     <p className="booknow">
-                        <button type="button" className="btn btn-primary">Book Me</button>
+                        <button onClick={() => this.props.history.push("/paymentportal")} type="button" className="btn btn-primary">Book Me</button>
                     </p>   
                 </div>
             </div>
