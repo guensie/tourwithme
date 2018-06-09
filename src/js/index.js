@@ -21,7 +21,7 @@ import '../styles/_termsandprivacy.scss';
 import  '../styles/_thankyoumailinglist.scss';
 import '../styles/_paymentportal.scss';
 
-//import your own components
+//import your own components  
 import Layout from './Layout.jsx';
 import { App } from './views/Home.jsx';
 import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
