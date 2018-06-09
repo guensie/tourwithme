@@ -24,7 +24,7 @@ export class TourguideProfilePage extends React.Component {
                         <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
                         <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
                         <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
-                    </div>
+                    </div>      
                 </div>
             </nav>
             <div className="TourguideProfilePage">
@@ -40,7 +40,7 @@ export class TourguideProfilePage extends React.Component {
                     <li className="list-group-item">Category: Cooking Experience  </li>
                     <li className="list-group-item">Gender: Male </li>
                     <li className="list-group-item">Cost: $15 </li>
-                    <li className="list-group-item">Number of guests: Two </li>
+                    <li className="list-group-item">Number of guests: Two </li>    
                     <li className="list-group-item">Upcoming Tours: 0</li>
                     <li><button type="button" className="btn btn-info">Edit Profile</button></li>
                 </ul>

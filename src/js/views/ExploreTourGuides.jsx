@@ -102,7 +102,7 @@ export class ExploreTourGuides extends React.Component {
                 </div>
             </div>
             
-            <div className="row mx-auto" id="secondrow">
+            <div className="row mx-auto" id="secondrow"> 
                 <div className="col-4">
                     <div className="card" style={{width: "18rem"}}>
                         <img className="card-img-top" src="https://images.pexels.com/photos/157622/woman-bench-stand-by-blonde-157622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
@@ -150,7 +150,7 @@ export class ExploreTourGuides extends React.Component {
                             </p>   
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
             <div className="row mx-auto" id="thirdrow">
                 <div className="col-4">
@@ -203,7 +203,7 @@ export class ExploreTourGuides extends React.Component {
                 </div>
             </div>
         </div>
-      
+                             
 
          );
     }

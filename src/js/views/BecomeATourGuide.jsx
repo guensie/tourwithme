@@ -39,7 +39,6 @@ export class BecomeATourGuide extends React.Component {
                     <div className="container">
                         <h1 className="display-4">What is Tour With Me?</h1>
                         <p className="lead">Tour With Me is the best local tour company by locals for tourists.</p>
-                        
                     </div>
                 </div>
             </div>
@@ -48,7 +47,7 @@ export class BecomeATourGuide extends React.Component {
                     <div className="container"> 
                         <h1 className="display-4">Be a Curator of Cool Experiences.</h1>
                         <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                    </div>
+                    </div>    
                 </div>
             </div>
             <div className="jumbotronc">
@@ -56,11 +55,11 @@ export class BecomeATourGuide extends React.Component {
                     <div className="container"> 
                         <h1 className="display-4">What Tour With Me Covers</h1>
                         <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-                        <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
+                        <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign Up Now</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>     
       
                );
     }
