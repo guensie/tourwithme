@@ -11,6 +11,7 @@ import NavBar from '../components/NavBar';
 import Filter from '../components/Filter';
 import Footer from '../components/Footer';
 
+
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class ExploreTourGuides extends React.Component {
