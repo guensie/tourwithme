@@ -3,30 +3,22 @@ import Flux from "@4geeksacademy/react-flux-dash";
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
+
 import { Link } from "react-router-dom";
 //include images into your bundle
 import ButtonComponent from '../components/ButtonComponent.jsx';
+import TourGuideCard from '../components/TourGuideCard';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 export class BecomeATourGuide extends React.Component {
   render() {
     return (
 
         <div className="becomeATourGuide">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" id="twm" href="/home">TWM</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
-                        <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
-                        <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
-                        <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
-                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
-                    </div>
-                </div>
-            </nav>
+            <div>
+                <NavBar />
+            </div> 
             <div className="jumbotron1 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/247929/pexels-photo-247929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                 <div className="container" id="intro1">
                     <h1 className="display-4">Become a tour guide with TWM and share your passion for the city.</h1>
@@ -47,7 +39,7 @@ export class BecomeATourGuide extends React.Component {
                 <div className="jumbotron3 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/936006/pexels-photo-936006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                     <div className="container"> 
                         <h1 className="display-4">Be a Curator of Cool Experiences.</h1>
-                        <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <p className="lead">You will be responsibe for creating cool experiences and do the tours that you have agreed to do in a friendly manner, keeping your calendar up to date, and responding to booking requests in a timely manner.</p>
                     </div>
                 </div>
             </div>
@@ -55,11 +47,12 @@ export class BecomeATourGuide extends React.Component {
                 <div className="jumbotron4 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                     <div className="container"> 
                         <h1 className="display-4">What Tour With Me Covers</h1>
-                        <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <p className="lead">Tour With Me will provide marketing, admin, payment collection, and the tools you need to create an attractive profile and get you on your way to earning money as a tour guide.</p>
                         <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
       
                );

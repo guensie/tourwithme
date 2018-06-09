@@ -8,15 +8,15 @@ import { Link } from "react-router-dom";
 import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
-export class TouristSignUp extends React.Component {
+export class TourGuideSignUp extends React.Component {
   render() {
     return (
-        <div className="signup-login">
+        <div className="tour-guide-signup">
             <NavBar />
             
             <form action="action_page.php">
                 <div className="container">
-                    <h1>Sign up as a Tourist</h1>
+                    <h1>Sign up as a Tour Guide</h1>
                     <p>Please fill in this form to create an account.</p>
                     <hr />
                     <label htmlFor="name"><b>Full Name</b></label>
@@ -42,12 +42,9 @@ export class TouristSignUp extends React.Component {
             </form>
             
         </div>
-       
-    );
+      
+          );
   }
 }
 
-export default TouristSignUp;
-
-
-
+export default TourGuideSignUp;
