@@ -31,7 +31,6 @@ export class BecomeATourGuide extends React.Component {
                     <div className="container">
                         <h1 className="display-4">What is Tour With Me?</h1>
                         <p className="lead">Tour With Me is the best local tour company by locals for tourists.</p>
-                        
                     </div>
                 </div>
             </div>

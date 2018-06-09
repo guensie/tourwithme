@@ -11,43 +11,73 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 export class TouristSignUp extends React.Component {
   render() {
     return (
-        <div className="signup-login">
+        
+        <div>
             <NavBar />
-            
-            <form action="action_page.php">
-                <div className="container">
-                    <h1>Sign up as a Tourist</h1>
-                    <p>Please fill in this form to create an account.</p>
-                    <hr />
-                    <label htmlFor="name"><b>Full Name</b></label>
-                    <input type="text" placeholder="Enter Full Name" name="name" required />
-                    
-                    <label htmlFor="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required />
-                
-                    <label htmlForfor="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required />
-                
-                    <label htmlForfor="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
-                    <hr></hr>
 
-                    <p> By creating an account you agree to our <a href="/TermsAndPrivacy">Terms & Privacy</a>.</p>
-                    <button type="submit" className="registerbtn">Register</button>
+            <div id="TouristSignup" className="tab-pane"> 
+                <form className="login-form">
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1" className="text-uppercase">Full Name</label>
+                        <input type="text" className="form-control" placeholder=""></input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1" className="text-uppercase">Password</label>
+                        <input type="password" className="form-control" placeholder=""></input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1" className="text-uppercase">Confirm Password</label>
+                        <input type="password" className="form-control" placeholder=""></input>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1" className="text-uppercase">Email Address</label>
+                        <input type="password" className="form-control" placeholder=""></input>
+                    </div>
+                    <div className="form-check">
+                        <button type="submit" className="btn btn-login float-right">REGISTER</button>
+                    </div>
+                </form>
+            </div>
+            <form>
+                <div className="gender">
+                    <label htmlFor="male">Male</label>
+                    <input id="male" type="radio" className="gender" value="m"></input>
+                    <label htmlFor="female">Female</label>
+                    <input id="female" type="radio" className="gender" value="f"></input>
                 </div>
-
-                <div className="container signin">
-                    <p>Already have an account? <a href="#">Sign in</a>.</p>
+                <p>Prefered Lanaguage:
+                    <select className="language">
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                    </select>
+                </p>
+                <p>Prefered Cuurency:
+                    <select className="Prefered Currency">
+                        <option value="Argentine Peso"></option>
+                        <option value="Brazillian real">Brazillian real</option>
+                        <option value="Pound Sterling">Pound Sterling</option>
+                        <option value="Saudi Arabian riyal">Saudi Arabian riyal</option>
+                        <option value="United States Dollars">United States Dollars</option>
+                    </select>
+                </p>
+                <div className="messagebox">
+                    <label htmlFor="messageinput">Describe Yourself:</label>
+                    <textarea className="messagefield"></textarea>
+                </div> 
+                <div className="submit">
+                    <input type="submit"></input>
                 </div>
             </form>
-            
+
         </div>
-       
+
+        
+      
     );
   }
 }
 
 export default TouristSignUp;
-
 
 

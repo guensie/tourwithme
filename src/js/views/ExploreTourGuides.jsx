@@ -30,6 +30,155 @@ export class ExploreTourGuides extends React.Component {
             </div>
                 
             <div className="row mx-auto">
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/108148/pexels-photo-108148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Come with me on a tour of Miamis most scenic locations & learn how to photograph them.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <p className="booknow">
+                                <button onClick={() => this.props.history.push("/tourguideprofilepage")}>Book Me</button>
+                            </p>    
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/1022473/pexels-photo-1022473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Spend a day with me in Miamis most artistic town...Wynwood.I will show you all my favorite spots. </p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me</button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/892699/pexels-photo-892699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">If you are a beginner surfer,the waves of Miami beach are the perfect place to start learning.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me</button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="row mx-auto" id="secondrow"> 
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/157622/woman-bench-stand-by-blonde-157622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star"></span>
+                            <span className="fa fa-star"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me</button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/1004799/pexels-photo-1004799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me</button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me </button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div className="row mx-auto" id="thirdrow">
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem;"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me </button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/681294/pexels-photo-681294.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me</button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <div className="card" style={{width: "18rem"}}>
+                        <img className="card-img-top" src="https://images.pexels.com/photos/1019413/pexels-photo-1019413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                        <div className="card-body">
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <span className="fa fa-star checked"></span>
+                            <p className="booknow">
+                                <button type="button" className="btn btn-primary">Book Me</button>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
                 <div className="col-4"><TourGuideCard img="https://images.pexels.com/photos/1022473/pexels-photo-1022473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" /></div>
                 <div className="col-4"><TourGuideCard /></div>
                 <div className="col-4"><TourGuideCard /></div>

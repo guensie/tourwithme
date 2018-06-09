@@ -28,60 +28,24 @@ export class TouristProfilePage extends React.Component {
                 </div>
             </nav>
             <div className="TouristProfilePage">
-                <form>
-                    <div className="namefield">
-                        <label htmlFor="nameinput">First Name:</label>
-                        <input id="nameinput" type="text" className="namefield"></input>
-                        <label htmlFor="nameinput">Last Name:</label>
-                        <input id="nameinput" type="text" className="namefield"></input>
+                <div className="card" style={{width: "18rem"}}>
+                    <img className="card-img-top" id="profileImage" src="https://images.pexels.com/photos/972884/pexels-photo-972884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                    <div className="card-body">
+                        <p className="card-text">My name is Ashley, I love to travel to Miami to escape the the harsh weather in Alaska:).</p>
                     </div>
-                    <div clasName="login">
-                        <div className="email">
-                            <label htmlFor="emailinput">E-Mail:</label>
-                            <input id="emailinput" type="text" size="30" maxLength="45" className="emailfield"></input>
-                        </div>
-                        <div className="user">
-                            <span>Username:
-                                <input type="text" className="password"></input>
-                            </span>   
-                        </div>
-                        <div className="password">
-                            <span>Password:
-                                <input type="password" className="password"></input>
-                            </span>
-                        </div>   
-                    </div>   
-                    <div className="gender">
-                        <label htmlFor="male">Male</label>
-                        <input id="male" type="radio" className="gender" value="m"></input>
-                        <label htmlFor="female">Female</label>
-                        <input id="female" type="radio" className="gender" value="f"></input>
-                    </div>
-                    <p>Prefered Lanaguage:
-                        <select className="colorstyles">
-                            <option value="English">English</option>
-                            <option value="Spanish">Spanish</option>
-                            <option value="French">French</option>
-                        </select>
-                    </p>
-                    <p>Prefered Currency:
-                        <select className="colorstyles">
-                            <option value="US Dollars">US$</option>
-                            <option value="Pound">Pound</option>
-                            <option value="Yen">Yen</option>
-                        </select>
-                    </p>
-                    <div className="messagebox">
-                        <label htmlFor="messageinput">Describe Yourself:</label>
-                        <textarea className="messagefield"></textarea>
-                    </div> 
-                    <div className="submit">
-                        <input type="submit"></input>
-                    </div>
-                </form>
-            
-            </div>
+                </div>
+                <ul className="list-group">
+                    <li className="list-group-item">Name: Ashley Blake </li>
+                    <li className="list-group-item">Age: 26 years old </li>
+                    <li className="list-group-item">Gender: Female </li>
+                    <li className="list-group-item">Job Description: Business Systems Analyst</li>
+                    <li className="list-group-item">Hobbies: Travelling, surfing and latin dancing </li>
+                    <li className="list-group-item"> Seize the moment...</li>
+                    <li><button type="button" className="btn btn-info">Edit Profile</button></li>
+                </ul>
+            </div> 
         </div>
+      
 
          );
     }

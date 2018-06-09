@@ -10,6 +10,7 @@ import 'bootstrap';
 
 //include your index.scss file into the bundle
 import '../styles/index.scss';
+<<<<<<< HEAD
 import '../styles/filter.scss';
 import '../styles/_home.scss';
 import '../styles/_becomeatourguide.scss';
@@ -19,6 +20,10 @@ import '../styles/_touristsignup.scss';
 import '../styles/_tourguidesignup.scss';
 import '../styles/_termsandprivacy.scss';
 import  '../styles/_thankyoumailinglist.scss';
+=======
+import '../styles/_paymentportal.scss';
+
+>>>>>>> bda16e013a03bdf87d2616b1f5aaa547033a968c
 //import your own components
 import Layout from './Layout.jsx';
 import { App } from './views/Home.jsx';
