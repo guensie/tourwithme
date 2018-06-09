@@ -42,10 +42,8 @@ export class PaymentPortal extends React.Component {
                         </div>
                     </div>
                     <div className="col-md-4 mb-3">
-                        <label for="validationCustomUsername">Username</label>
                         <div className="input-group">
                             <div className="input-group-prepend">
-                                <span className="input-group-text" id="inputGroupPrepend">@</span>
                             </div>
                             <input type="text" className="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required></input>
                             <div className="invalid-feedback">
@@ -53,36 +51,35 @@ export class PaymentPortal extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="form-row"
-              <div className="col-md-6 mb-3">
-                  <label for="validationCustom03">City</label>
-                  <input type="text" className="form-control" id="validationCustom03" placeholder="City" required></input>
-                  <div className="invalid-feedback">
-               </div>    
+                <div className="form-row">
+                    <div className="col-md-6 mb-3">
+                        <label for="validationCustom03">City</label>
+                        <input type="text" className="form-control" id="validationCustom03" placeholder="City" required></input>
+                        <div className="invalid-feedback">
+                        </div>    
+                    </div>
+                    <div className="col-md-3 mb-3">
+                        <label for="validationCustom04">State</label>
+                        <input type="text" className="form-control" id="validationCustom04" placeholder="State" required></input>
+                        <div className="invalid-feedback">
+                        </div>
+                    </div>
+                    <div className="col-md-3 mb-3">
+                        <label for="validationCustom05">Zip</label>
+                        <input type="text" className="form-control" id="validationCustom05" placeholder="Zip" required></input>
+                        <div className="invalid-feedback">
+                        </div>
+                    </div>
+                </div>   
+                <div className="form-group">
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required></input>
+                        <label className="form-check-label" for="invalidCheck">
+                        </label>
+                        <div className="invalid-feedback">
+                        </div>
+                    </div>
                 </div>
-                <div className="col-md-3 mb-3">
-                  <label for="validationCustom04">State</label>
-                  <input type="text" className="form-control" id="validationCustom04" placeholder="State" required></input>
-                  <div className="invalid-feedback">
-                  </div>
-                </div>
-                <div className="col-md-3 mb-3">
-                  <label for="validationCustom05">Zip</label>
-                  <input type="text" className="form-control" id="validationCustom05" placeholder="Zip" required></input>
-                  <div className="invalid-feedback">
-                  </div>
-                </div>
-              </div>   
-              <div className="form-group">
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" value="" id="invalidCheck" required></input>
-                  <label className="form-check-label" for="invalidCheck">
-                  </label>
-                  <div className="invalid-feedback">
-                  </div>
-                </div>
-              </div>
-              <button className="btn btn-primary" type="submit">Submit form</button>
             </form>
             <script>
              (function() {
@@ -179,6 +176,7 @@ export class PaymentPortal extends React.Component {
                 </div>
             </div>            
         </div>
+
 
          );
     }
