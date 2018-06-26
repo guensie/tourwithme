@@ -39,7 +39,7 @@ export class App extends React.Component {
                 <div className="col-4"><TourGuideCard /></div>
                 <div className="col-4"><TourGuideCard /></div>
                 <div className="col-4"><TourGuideCard /></div>
-            </div>
+            </div>   
             <Footer />
         </div>
     

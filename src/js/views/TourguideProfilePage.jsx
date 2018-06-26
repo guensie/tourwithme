@@ -12,38 +12,70 @@ export class TourguideProfilePage extends React.Component {
   render() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" id="twm" href="/home">TWM</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
-                        <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
-                        <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
-                        <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
-                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
-                    </div>      
-                </div>
-            </nav>
+           
             <div className="TourguideProfilePage">
                 <div className="card" style={{width: "18rem"}}>
-                    <img className="card-img-top" id="profileImage" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
+                    <img className="card-img-top" id="profileImage" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uoDvQB0/slow-motion-young-surfer-learning-how-to-surf-on-small-waves_4a2mqf8ag__S0005.jpg" alt="Card image cap"></img>
                     <div className="card-body">
-                        <p className="card-text">My experience: Join me to learn how to make authentic Argentinian empanadas. We will meet at my friends restaurant in Little Havana. After class we will enjoy Miami style cafecitos.</p>
+                        <p className="card-text">About your host: My name is John, I am a a level 3 surfing instructor. I have been surfing for the last 25 years mainly in Miami,Florida but also all around the World. Graduated in Sport Sciences and GM of Surf Lisbon - House & School, I will make sure you have the best experience with me and my team!</p>
                     </div>
                 </div>
                 <ul className="list-group">
+                    <li className="list-group-item">Category: Surfing Instructor  </li>
                     <li className="list-group-item">Length of tour: 1-2 hrs </li>
                     <li className="list-group-item">Language(s): English, Spanish </li>
-                    <li className="list-group-item">Category: Cooking Experience  </li>
+                    <li className="list-group-item">Category: Surfing Equipment and Transportation included  </li>
                     <li className="list-group-item">Gender: Male </li>
                     <li className="list-group-item">Cost: $15 </li>
-                    <li className="list-group-item">Number of guests: Two </li>    
-                    <li className="list-group-item">Upcoming Tours: 0</li>
-                    <li><button type="button" className="btn btn-info">Edit Profile</button></li>
+                    <li className="list-group-item"> Number of guests: Six</li>
+                    <li className="list-group-item"> Who can come: Guests ages 10 and up can attend.</li>
+                    <li className="list-group-item"> Upcoming Availability</li>
                 </ul>
+                <div className="month">      
+                </div>
+                <ul className="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                </ul>
+                <ul className="days">  
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><span className="active">10</span></li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+                <li><button type="button" className="btn btn-info">BOOK ME</button></li>  
             </div> 
         </div>
       

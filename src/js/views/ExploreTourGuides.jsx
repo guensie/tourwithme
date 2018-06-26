@@ -45,7 +45,7 @@ export class ExploreTourGuides extends React.Component {
                 <div className="col-4"><TourGuideCard /></div>
             </div>
             <Footer />
-        </div>
+        </div>    
           
 
         

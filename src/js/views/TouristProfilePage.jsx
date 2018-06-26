@@ -27,24 +27,24 @@ export class TouristProfilePage extends React.Component {
                     </div>
                 </div>
             </nav>
-            <div className="TouristProfilePage">
+            <div className="TouristProfilePage">  
                 <div className="card" style={{width: "18rem"}}>
                     <img className="card-img-top" id="profileImage" src="https://images.pexels.com/photos/972884/pexels-photo-972884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
-                    <div className="card-body">
+                    <div className="card-body">   
                         <p className="card-text">My name is Ashley, I love to travel to Miami to escape the the harsh weather in Alaska:).</p>
-                    </div>
+                    </div>   
                 </div>
                 <ul className="list-group">
-                    <li className="list-group-item">Name: Ashley Blake </li>
-                    <li className="list-group-item">Age: 26 years old </li>
+                    <li className="list-group-item">Name: Jody-ann Johnson </li>
+                    <li className="list-group-item">Age: 28 years old </li>
                     <li className="list-group-item">Gender: Female </li>
                     <li className="list-group-item">Job Description: Business Systems Analyst</li>
-                    <li className="list-group-item">Hobbies: Travelling, surfing and latin dancing </li>
-                    <li className="list-group-item"> Seize the moment...</li>
+                    <li className="list-group-item">Hobbies: Travelling, computer coding, surfing and latin dancing </li>
+                    <li className="list-group-item"> Favourite Quote: Seize the moment everytime...</li>
                     <li><button type="button" className="btn btn-info">Edit Profile</button></li>
-                </ul>
+                </ul>  
             </div> 
-        </div>
+        </div>  
       
 
          );
