@@ -3,6 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fas } from '@fortawesome/fontawesome-free-solid';
+// import { far } from '@fortawesome/fontawesome-free-regular';
+// // import { fab } from '@fortawesome/fontawesome-free-brands';
+// library.add(fas, far);
+
 //include jquery into the bundle and store its contents into the $ variable
 import $ from "jquery";
 //include bootstrap npm library into the bundle

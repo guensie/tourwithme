@@ -11,7 +11,7 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 
 export class PaymentPortal extends React.Component {
   render() {
-    return (
+    return ( 
         <div>
             <NavBar />
             

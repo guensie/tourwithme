@@ -1,21 +1,50 @@
 .filterButtons{
-margin-right: 14px;
+color: #0a5159;
+// text-align: center;
+width: 100%;
 }
 
 .custom-select-guests{
-    width: 125px;
-    margin-left: 10px;
+    width: 75px;
+    text-align: center;
+
 }
  .custom-select-length{
      margin-left: 10px;
      margin-right: 10px;
+     text-align: center;
  }
 
-.pick-a-date{
-    margin-left: 10px;
+
+// .borderaa{
+//     border-width: thick;
+//     border-color: blue;
+// }
+
+.pickADate{
+    float: left;
+    overflow: hidden;
+    // margin: 10px;
+}
+.costRange{
+    float: right;
+    overflow: hidden;
 }
 
-.borderaa{
-    border-width: thick;
-    border-color: blue;
+
+.rangeLabel{
+    padding: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.filters{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.guests-label, .custom-select-guests, .pick-a-date{
+    margin-left: 15px;
 }

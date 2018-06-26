@@ -17,10 +17,10 @@ export class BecomeATourGuide extends React.Component {
 
         <div className="becomeATourGuide">
             <div>
-                <NavBar />
+                <NavBar activeNavbar="BECOME"/>
             </div> 
             <div className="jumbotron1 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/247929/pexels-photo-247929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
-                <div className="container" id="intro1">
+                <div className="containertwm" id="intro1">
                     <h1 className="display-4">Become a tour guide with TWM and share your passion for the city.</h1>
                     <p className="lead">With TWM you can make money on your own terms doing what you love.</p>
                     <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>

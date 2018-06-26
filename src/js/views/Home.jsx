@@ -12,14 +12,19 @@ import Footer from '../components/Footer.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class App extends React.Component {
+//   contructor(props){
+//       super(props);
+//       this.state = {};
+//   }
+  
   render() {
     return (
         <div className="homepage" id='app'>
             <div className="navbar">
-                <NavBar />
+                <NavBar activeNavbar="TWM" />
             </div>
             <div className="jumbotron jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/952842/pexels-photo-952842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
-                <div className="container">
+                <div className="containertwm">
                     <h1 className="display-4">Tour With Me</h1>
                     <p className="lead">Because friends dont let friends take corporate tours</p>
                 </div>

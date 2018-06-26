@@ -37,7 +37,7 @@
 
 #twm{
 font-family: 'Merienda', cursive;
- color:#40b29c;   
+ color: black;   
 }
 
 .jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4{
@@ -62,6 +62,10 @@ font-family: 'Merienda', cursive;
 margin-right: 14px;
 }
 
+.active{
+    background-color: #17a2b8;
+}
 
-
-
+#dropdownMenuButton{
+    padding: 9px;
+}
