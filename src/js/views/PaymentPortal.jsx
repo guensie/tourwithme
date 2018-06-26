@@ -15,7 +15,7 @@ export class PaymentPortal extends React.Component {
         <div>
             <NavBar />
             
-            <div className="row">
+            <div className="row">    
                 <div className="col-75">
                     <div className="container">
                         <form action="/action_page.php">
@@ -31,7 +31,7 @@ export class PaymentPortal extends React.Component {
                                     <input type="text" id="adr" name="address" placeholder="542 W. 15th Street"></input>
                                     <label htmlFor="city"><i className="fa fa-institution"></i> City</label>
                                     <input type="text" id="city" name="city" placeholder="New York"></input>
-
+                
                                     <div className="row">
                                         <div className="col-50">
                                             <label htmlFor="state">State</label>

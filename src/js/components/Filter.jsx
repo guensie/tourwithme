@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Nouislider from 'react-nouislider';
+
 
 
 class Filter extends React.Component{
