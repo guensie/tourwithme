@@ -19,9 +19,9 @@ class TourGuideCard extends React.Component{
                     <p className="booknow">
                         <button onClick={() => this.props.history.push("/paymentportal")}>Book Me</button>
                     </p>   
-                </div>
+                </div> 
             </div>
         );
-    }
+    }  
 }
 export default withRouter(TourGuideCard);

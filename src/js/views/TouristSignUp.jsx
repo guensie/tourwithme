@@ -71,7 +71,10 @@ export class TouristSignUp extends React.Component {
             </form>
 
         </div>
-
+        
+        
+        
+        
         
       
     );

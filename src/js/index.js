@@ -21,6 +21,8 @@ import '../styles/_termsandprivacy.scss';
 import  '../styles/_thankyoumailinglist.scss';
 import '../styles/_paymentportal.scss';
 import  '../styles/tourguideprofilepage.scss';
+import '../styles/touristprofilepage.scss';
+
 
 
 //import your own components  

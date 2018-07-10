@@ -26,7 +26,7 @@ class NavBar extends React.Component{
                         </a>
                             
                         <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
-                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
+                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>   
                            
                     </div>
                 </div>
