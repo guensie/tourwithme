@@ -10,10 +10,13 @@
     display: block;
 }
 
-.container-fluid{
-    background-color: #0a5159;
+.container-fluid, #footer{
+    background-color: #17a2b8;
+    max-height: 100%;
 }
 
-.btn-outline-secondary{
+.btnjoin{
     color: white;
+    // background-color: white;
 }
+

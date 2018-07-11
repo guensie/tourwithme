@@ -36,7 +36,7 @@ import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
 
 
 
-// import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
+
 //render your react application
 
 
@@ -47,18 +47,15 @@ import { TourguideProfilePage } from './views/TourguideProfilePage.jsx';
 import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
 import { PaymentPortal } from './views/PaymentPortal.jsx';
+import { TourGuides } from './views/TourGuides.jsx';
+import {CreateProfile} from './views/CreateProfile.jsx';
+import MyAction from "./actions/MyActions.jsx";
 
 ReactDOM.render(
     <Layout />,
        document.querySelector('#app')
 );
-//render your react application
-// ReactDOM.render(
-//     <ExploreTourGuides />,
-//     <TouristSignUp />,
-//     <TourguideSignUp />,
-//     <TouristProfilePage />,
-//     <TourguideProfilePage />,
+
     
     
 

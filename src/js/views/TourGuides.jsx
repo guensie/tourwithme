@@ -1,15 +1,15 @@
 import React from "react";
 import Flux from "@4geeksacademy/react-flux-dash";
-import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import MyStore from '../stores/MyStore';
 import { Link } from "react-router-dom";
-//include images into your bundle
+
 import TourGuideCard from '../components/TourGuideCard';
-// import ButtonComponent from '../components/ButtonComponent.jsx';
-import NavBar from '../components/NavBar.jsx';
-import Footer from '../components/Footer.jsx';
-// import ExploreTourGuides from '/exploretourguides.html';
+// import Modal from '../components/Modal';
+// import avatar1 from '../../img/user_1.jpg';
+// import TourGuideActions from '../actions/MyAction';
+import MyStore from '../stores/MyStore';
+// import MyAction from '../actions/MyAction';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 export default class TourGuides extends Flux.View {
     constructor(){
@@ -17,9 +17,9 @@ export default class TourGuides extends Flux.View {
         this.state = {
             showModal: false  ,
             tourguides: [
-                {id:'', name: 'john', title: 'Learn to Cook', oneliner: 'Learn to cook traditional Miami dishes at my restaurant ' ,image: 'https://placeimg.com/640/480/people?t=1530318401281', category: '', age: '', guests: '', cost: '', gender: '' },
-                {id:'',name: 'jane', title: 'Photography Lesson', oneliner: 'Walk around Miamis most scenic spots and learn how to capture them with a camera' ,image: 'https://placeimg.com/640/480/people?t=1530318434719', category: '', age: '', guests: '', cost: '', gender: ''},
-                {id:'', name: 'lacy', title: 'Cigar Factory Tour', oneliner: 'Tour a cuban style cigar factory with me and the owner of Miami Cigars ' ,image: 'https://randomuser.me/api/portraits/men/1.jpg', category: '', age: '', guests: '', cost: '', gender: '' }
+                {id: '1', name:'john', title: 'Learn to Cook', oneliner: 'Learn to cook traditional Miami dishes at my restaurant ' ,image: 'https://placeimg.com/640/480/people?t=1530318401281', category: '', age: '', guests: '', cost: '', gender: '' },
+                {id: '2', name:'jane', title: 'Photography Lesson', oneliner: 'Walk around Miamis most scenic spots and learn how to capture them with a camera' ,image: 'https://placeimg.com/640/480/people?t=1530318434719', category: '', age: '', guests: '', cost: '', gender: '' },
+                {id: '3', name:'jim', title: 'Cigar Factory Tour', oneliner: 'Tour a cuban style cigar factory with me and the owner of Miami Cigars ' ,image: 'https://randomuser.me/api/portraits/men/1.jpg', category: '', age: '', guests: '', cost: '', gender: '' }
                 ]
         };
         this.bindStore(MyStore, () => {
@@ -50,6 +50,7 @@ export default class TourGuides extends Flux.View {
             guests: tourguides.guests,
             cost: tourguides.cost,
             name: tourguides.name
+            
         }
             );
     }
@@ -62,11 +63,9 @@ export default class TourGuides extends Flux.View {
     //     MyAction.editTourGuide(id);  
     // }
     
-
-  
-  render() {
     
-    const tourguidesInHTML = this.state.tourguides.map((tourguide, i) =>{
+    render() {
+        const tourguidesInHTML = this.state.tourguides.map((tourguide, i) =>{
             return <TourGuideCard key={i} 
                                 id={tourguide.id}
                                 title={tourguide.title} 
@@ -79,33 +78,24 @@ export default class TourGuides extends Flux.View {
                                 cost={tourguide.cost}
                                 name={tourguide.name}
                                 onDelete={(id) => this.deleteTourGuide(id)}/>;
-    });
-    return (
-        <div className="homepage" id='app'>
-            <div className="navbar">
-                <NavBar activeNavbar="TWM" />
-            </div>
-            <div className="jumbotron jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/952842/pexels-photo-952842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
-                <div className="containertwm">
-                    <h1 className="display-4">Tour With Me</h1>
-                    <p className="lead">Because friends dont let friends take corporate tours</p>
+        });
+        return (
+            <div className="homepage" id='app'>
+                <div className="navbar">
+                    <NavBar activeNavbar="TWM" />
                 </div>
+                <div className="jumbotron jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/952842/pexels-photo-952842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
+                    <div className="containertwm">
+                        <h1 className="display-4">Tour With Me</h1>
+                        <p className="lead">Because friends dont let friends take corporate tours</p>
+                    </div>
+                </div>
+                <div className="card-colums row mx-auto">
+                    {tourguidesInHTML}
+                </div>   
+                <Footer />
             </div>
-            <div className="card-colums row mx-auto">
-                {tourguidesInHTML}
-            </div>   
-            <Footer />
-        </div>
     
     );
-    
-}}
-
-
-// ReactDOM.render(
-//     <Home
-//     />,
-//     document.querySelector('#app')
-// );
-
-
+  }
+}

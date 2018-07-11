@@ -2,7 +2,7 @@ import React from "react";
 import Flux from "@4geeksacademy/react-flux-dash";
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-
+import NavBar from '../components/NavBar';
 import { Link } from "react-router-dom";
 //include images into your bundle
 import ButtonComponent from '../components/ButtonComponent.jsx';
@@ -14,6 +14,9 @@ export class TourguideProfilePage extends React.Component {
         <div>
            
             <div className="TourguideProfilePage">
+                <div>
+                    <NavBar activeNavbar="BECOME"/>
+                </div>
                 <div className="card" style={{width: "18rem"}}>
                     <img className="card-img-top" id="profileImage" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uoDvQB0/slow-motion-young-surfer-learning-how-to-surf-on-small-waves_4a2mqf8ag__S0005.jpg" alt="Card image cap"></img>
                     <div className="card-body">
@@ -75,7 +78,7 @@ export class TourguideProfilePage extends React.Component {
                     <li>30</li>
                     <li>31</li>
                 </ul>
-                <li><button type="button" className="btn btn-info">BOOK ME</button></li>  
+                <li><button type="button" className="btn btn-info"onClick={() => this.props.history.push("/PaymentPortal")}>BOOK ME</button></li>  
             </div> 
         </div>
       
