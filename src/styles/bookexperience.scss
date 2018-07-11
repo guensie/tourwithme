@@ -1,0 +1,159 @@
+
+.product-image { float: left; width: 20%; }
+.product-details { float: left; width: 37%; }
+.product-price { float: left; width: 12%; }
+.product-quantity { float: left; width: 10%; }
+.product-removal { float: left; width: 9%; }
+.product-line-price { float: left; width: 12%; text-align: right; }
+
+
+.group:before,
+.group:after {
+    content: '';
+    display: table;
+} 
+
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
+
+.shopping-cart, .column-labels, .product, .totals-item {
+  @extend .group;
+}
+
+
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
+}
+
+
+body {
+  padding: 0px 30px 30px 20px;
+  font-family: $font-default;
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+label {
+  color: $color-label;
+}
+
+.shopping-cart {
+  margin-top: -45px;
+}
+
+
+.column-labels {
+  label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $color-border;
+  }
+  
+  .product-image, .product-details, .product-removal {
+    text-indent: -9999px;
+  
+}
+
+
+
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border;
+  
+}
+
+  .product-image {
+    text-align: center;
+}
+
+    img {
+      width: 100px;
+    
+  }
+  
+ 
+.product-title {
+      margin-right: 20px;
+      font-family: $font-bold;
+ }
+
+.product-description {
+      margin: 5px 20px 5px 0;
+      line-height: 1.4em;
+    
+ }
+  
+  .product-quantity 
+    input {
+        
+      width: 40px;
+  }
+  
+  .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: #c66;
+    color: #fff;
+    font-family: $font-bold;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  
+  
+  .remove-product:hover {
+    background-color: #a44;
+  
+}
+
+
+
+.total {
+  .total-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+    
+    label {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+    }
+    
+    .total-value {
+      float: right;
+      width: 21%;
+      text-align: right;
+    }
+  
+  
+  .total-item-total {
+    font-family: $font-bold;
+  
+}
+
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.checkout:hover {
+  background-color: #494;
+}
+
