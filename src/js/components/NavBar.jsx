@@ -39,6 +39,9 @@ class NavBar extends React.Component{
                             <a className={"nav-item nav-link navbtn" + this.getActive("TOURIST")} href="/touristprofilepage">My Tourist Profile</a>
                                
                         </div>
+
+                           
+
                     </div>
                    
                 </nav>

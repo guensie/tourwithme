@@ -24,11 +24,12 @@ export class TouristProfilePage extends React.Component {
                         <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
                         <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
                         <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
-                    </div>
+                    </div>   
                 </div>
             </nav>
             <div className="TouristProfilePage">  
                 <div className="card" style={{width: "18rem"}}>
+                    <div clas><h1>My Profile</h1></div>
                     <img className="card-img-top" id="profileImage" src="https://images.pexels.com/photos/972884/pexels-photo-972884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
                     <div className="card-body">   
                         <p className="card-text">My name is Ashley, I love to travel to Miami to escape the the harsh weather in Alaska:).</p>
@@ -46,7 +47,6 @@ export class TouristProfilePage extends React.Component {
             </div> 
         </div>  
       
-
          );
     }
   }

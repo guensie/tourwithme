@@ -24,9 +24,11 @@ import '../styles/_footer.scss';
 import '../styles/_touristsignup.scss';
 import '../styles/_tourguidesignup.scss';
 import '../styles/_termsandprivacy.scss';
-import  '../styles/_thankyoumailinglist.scss';
+import '../styles/_thankyoumailinglist.scss';
 import '../styles/_paymentportal.scss';
-import  '../styles/tourguideprofilepage.scss';
+import '../styles/tourguideprofilepage.scss';
+import '../styles/touristprofilepage.scss';
+
 
 
 //import your own components  
@@ -48,14 +50,10 @@ import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
 import { PaymentPortal } from './views/PaymentPortal.jsx';
 import { TourGuides } from './views/TourGuides.jsx';
-import {CreateProfile} from './views/CreateProfile.jsx';
+import { CreateProfile } from './views/CreateProfile.jsx';
 import MyAction from "./actions/MyActions.jsx";
-
+import TourActions from "./actions/TourActions.jsx";
 ReactDOM.render(
     <Layout />,
-       document.querySelector('#app')
+    document.querySelector('#app')
 );
-
-    
-    
-

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 
 
-class Filter extends React.Component{
+class Filter extends React.Component{ 
     
     render(){
         return (
@@ -20,6 +20,22 @@ class Filter extends React.Component{
                             <option value="2">6+</option>
                             <option value="2">Any</option>
                         </select>
+
+                        <select className="custom-select-length">
+                            <option value="0">Tour Length</option>
+                            <option value="1">1-2 hrs</option>
+                            <option value="2">3-4 hrs</option>
+                            <option value="2">5-6 hrs</option>
+                            <option value="2">6+ hrs</option>
+                            <option value="2">Any</option>
+                        </select>
+                   Costs
+                        <input type="range" list="tickmarks" />
+                        <datalist id="tickmarks">
+                            <option value="0" label="0%" />
+                            <option value="10" />
+                        </datalist>
+                    
                     </div>
                 </span>
                 
@@ -42,11 +58,7 @@ class Filter extends React.Component{
             </div>
             
             
-            
-                
-            
-            
-
+    
             
         );
     }

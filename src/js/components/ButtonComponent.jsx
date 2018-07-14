@@ -18,4 +18,5 @@ ButtonComponent.defaultProps = {
   className: '',
   color: 'light'
 };
-export default ButtonComponent;
+export default ButtonComponent; 
+  
