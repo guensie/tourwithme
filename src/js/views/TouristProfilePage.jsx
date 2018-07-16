@@ -2,31 +2,17 @@ import React from "react";
 import Flux from "@4geeksacademy/react-flux-dash";
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-
+import NavBar from '../components/NavBar.jsx';
 import { Link } from "react-router-dom";
 //include images into your bundle
 import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class TouristProfilePage extends React.Component {
-  render() {
-    return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" id="twm" href="/home">TWM</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-item nav-link active" href="/exploretourguides">Explore Tour Guides <span className="sr-only">(current)</span></a>
-                        <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
-                        <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
-                        <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
-                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
-                    </div>   
-                </div>
-            </nav>
+    render() {
+        return (
+            <div>
+            <NavBar />
             <div className="TouristProfilePage">  
                 <div className="card" style={{width: "18rem"}}>
                     <div clas><h1>My Profile</h1></div>
@@ -45,10 +31,10 @@ export class TouristProfilePage extends React.Component {
                     <li><button type="button" className="btn btn-info">Edit Profile</button></li>
                 </ul>  
             </div> 
-        </div>  
-      
-         );
+        </div>
+
+        );
     }
-  }
+}
 
 export default TouristProfilePage;

@@ -41,7 +41,8 @@ TourGuideCard.propTypes = {
     tour_summary: PropTypes.string,
     rating: PropTypes.number,
     name: PropTypes.string,
-    oneliner: PropTypes.string
+    oneliner: PropTypes.string,
+    aboutme: PropTypes.string
 };
 
 

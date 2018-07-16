@@ -1,15 +1,19 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
-.filterButtons{
-margin-right: 14px;
+.filterButtons {
+    margin-right: 14px;
 }
 
-.card{
+.card {
     margin: auto;
     height: max-height;
     text-align: center;
 }
 
-.filters{
+.filters {
     margin-bottom: 10px;
+}
+
+.white.lead {
+    color: white;
 }

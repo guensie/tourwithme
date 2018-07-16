@@ -1,19 +1,25 @@
 .tourguideprofilejumbotron {
-     background-color:white;
+    background-color: white;
 }
 
 
-.profileImage{
+.profileImage {
     height: 100px;
     width: 500px;
 
 }
 
 
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
 
 /* Month header */
+
 .month {
     padding: 70px 25px;
     width: 50%;
@@ -22,6 +28,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 /* Month list */
+
 .month ul {
     margin: 0;
     padding: 0;
@@ -35,22 +42,25 @@ body {font-family: Verdana, sans-serif;}
 }
 
 /* Previous button inside month header */
+
 .month .prev {
     float: left;
     padding-top: 10px;
 }
 
 /* Next button */
+
 .month .next {
     float: right;
     padding-top: 10px;
 }
 
 /* Weekdays (Mon-Sun) */
+
 .weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color:#ddd;
+    background-color: #ddd;
 }
 
 .weekdays li {
@@ -61,6 +71,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 /* Days (1-31) */
+
 .days {
     padding: 10px 0;
     background: #eee;
@@ -73,11 +84,12 @@ body {font-family: Verdana, sans-serif;}
     width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
-    font-size:12px;
+    font-size: 12px;
     color: #777;
 }
 
 /* Highlight the "current" day */
+
 .days li .active {
     padding: 5px;
     background: #1abc9c;
@@ -85,8 +97,38 @@ body {font-family: Verdana, sans-serif;}
 
 }
 
+#oneliner {
+    text-align: center;
+    font-size: 32px;
+    font-family: cursive;
+}
 
+#profileImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 
+.lead.name {
+    text-align: center;
+}
 
+.aboutme {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
 
+.tourtitle {
+    text-align: center;
+    margin-top: 25px;
+}
 
+#makeinfo {
+    color: white;
+}
+
+#makecenter {
+    text-align: center;
+}

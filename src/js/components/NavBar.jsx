@@ -1,19 +1,20 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-class NavBar extends React.Component{
-    
-    getActive(tag){
-        if(tag === this.props.activeNavbar) {
+class NavBar extends React.Component {
+
+    getActive(tag) {
+        if (tag === this.props.activeNavbar) {
             return " active";
-        } else {
+        }
+        else {
             return "";
         }
     }
-    render(){
-       
-        
+    render() {
+
+
         return (
             <span className="thenavbar" role="tablist" id="navbuttons">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,8 +36,8 @@ class NavBar extends React.Component{
                                 </div>
                             </div>
                                 
-                            <a className={"nav-item nav-link navbtn" + this.getActive("TOURGUIDE")} href="/tourguideprofilepage">My Tourguide Profile</a>
-                            <a className={"nav-item nav-link navbtn" + this.getActive("TOURIST")} href="/touristprofilepage">My Tourist Profile</a>
+                            
+                            <a className={"nav-item nav-link navbtn" + this.getActive("TOURIST")} href="/touristprofilepage">My Profile</a>
                                
                         </div>
 
@@ -46,7 +47,7 @@ class NavBar extends React.Component{
                    
                 </nav>
             </span>
-            
+
         );
     }
 }

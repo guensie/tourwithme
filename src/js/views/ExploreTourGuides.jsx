@@ -10,35 +10,46 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 import NavBar from '../components/NavBar.jsx';
 import Footer from '../components/Footer.jsx';
 import Filter from '../components/Filter.jsx';
+import MyActions from '../actions/MyActions';
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export default class TourGuides extends Flux.View {
-    constructor(){
+    constructor() {
         super();
         this.state = {
-            showModal: false  ,
+            showModal: false,
             tourguides: [
-                {id: '1', title: 'Learn to Cook', tour_summary: 'Learn to cook traditional Miami dishes at my restaurant ' ,image: 'https://placeimg.com/640/480/people?t=1530318401281', category: '', age: '', guests: '', cost: '', gender: '' },
-                {id: '2', title: 'Photography Lesson', tour_summary: 'Walk around Miamis most scenic spots and learn how to capture them with a camera' ,image: 'https://placeimg.com/640/480/people?t=1530318434719', category: '', age: '', guests: '', cost: '', gender: ''},
-                {id: '3', title: 'Cigar Factory Tour', tour_summary: 'Tour a cuban style cigar factory with me and the owner of Miami Cigars ' ,image: 'https://randomuser.me/api/portraits/men/1.jpg', category: '', age: '', guests: '', cost: '', gender: '' }
-                ]
+                { id: '', name: 'john', title: 'Learn to Cook', oneliner: 'Learn to cook traditional Miami dishes at my restaurant ', image: 'https://placeimg.com/640/480/people?t=1530318401281', category: '', age: '', guests: '', cost: '', gender: '' },
+                { id: '', name: 'jane', title: 'Photography Lesson', oneliner: 'Walk around Miamis most scenic spots and learn how to capture them with a camera', image: 'https://placeimg.com/640/480/people?t=1530318434719', category: '', age: '', guests: '', cost: '', gender: '' },
+                { id: '', name: 'lacy', title: 'Cigar Factory Tour', oneliner: 'Tour a cuban style cigar factory with me and the owner of Miami Cigars ', image: 'https://randomuser.me/api/portraits/men/1.jpg', category: '', age: '', guests: '', cost: '', gender: '' }
+            ]
         };
         this.bindStore(MyStore, () => {
             this.setState({
                 tourguides: MyStore.getTourGuides()
             });
-            
+
         });
     }
-    
-    
-    componentDidMount(){
+
+
+    foodFilter() {
+        let tourguides = MyStore.getTourGuides();
+        if (tourguides.category === 'Food and drink') {
+            tourguides.push(tourguides);
+
+        }
+    }
+    // Function that takes in filter options, that resets new array Write it Here!!!!
+
+
+    componentDidMount() {
         this.setState({
             tourguides: MyStore.getTourGuides()
         });
-        
-        
-        
+
+        MyActions.allTourGuides();
+
         let tourguides = MyStore.getTourGuides();
         let tourguideToEdit = this.setState({
             title: tourguides.title,
@@ -51,23 +62,23 @@ export default class TourGuides extends Flux.View {
             guests: tourguides.guests,
             cost: tourguides.cost,
             name: tourguides.name
-        }
-            );
+        });
     }
 
     // deleteTourGuide(id){
     //     MyAction.deleteTourGuide(id);
     // }
-        
+
     // editContact(id){
     //     MyAction.editTourGuide(id);  
     // }
-    
 
-  
-  render() {
-    
-    const tourguidesInHTML = this.state.tourguides.map((tourguide, i) =>{
+
+
+
+    render() {
+
+        const tourguidesInHTML = this.state.tourguides.map((tourguide, i) => {
             return <TourGuideCard key={i} 
                                 id={tourguide.id}
                                 title={tourguide.title} 
@@ -80,28 +91,30 @@ export default class TourGuides extends Flux.View {
                                 cost={tourguide.cost}
                                 name={tourguide.name}
                                 onDelete={(id) => this.deleteTourGuide(id)}/>;
-    });
-    return (
-        <div className="homepage" id='app'>
+
+        });
+        return (
+            <div className="exploreTourGuides" id='app'>
             <div className="navbar">
                 <NavBar activeNavbar="ExploreTourGuides" />
             </div>
-            <div className="jumbotron jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/952842/pexels-photo-952842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
+            <div className="jumbotron jumbotron-fluid" style = { { backgroundImage: "url('https://images.pexels.com/photos/269923/pexels-photo-269923.jpeg?auto=compress&cs=tinysrgb&h=350')" } }>
                 <div className="containertwm">
-                    <h1 className="display-4">Tour With Me</h1>
-                    <p className="lead">Because friends dont let friends take corporate tours</p>
+                    <h1 className="white display-4">Tour With Me</h1>
+                    <p className="white lead">Because friends dont let friends take corporate tours</p>
                 </div>
             </div>
-            <Filter />
+            <Filter  />
             <div className="card-columns row mx-auto">
                 {tourguidesInHTML}
             </div>   
             <Footer />
         </div>
-    
-    );
-    
-}}
+
+        );
+
+    }
+}
 
 
 // ReactDOM.render(
@@ -109,5 +122,3 @@ export default class TourGuides extends Flux.View {
 //     />,
 //     document.querySelector('#app')
 // );
-
-

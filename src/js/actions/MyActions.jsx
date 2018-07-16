@@ -91,10 +91,11 @@ class TourGuideActions extends Flux.Action {
 
 
 
-    oneTourGuide(oneTourGuide) {
-        fetch('https://backend-tour-with-me-guensie.c9users.io/tourguide/' + oneTourGuide.id, {
+    oneTourGuide(id, callback) {
+        console.log('Helloooooo');
+        fetch('https://backend-tour-with-me-guensie.c9users.io/tourguide/' + id, {
                 method: 'GET', // or 'PUT'
-                body: JSON.stringify(oneTourGuide), // data can be `string` or {object}!
+                // body: JSON.stringify(id), // data can be `string` or {object}!
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
@@ -103,8 +104,9 @@ class TourGuideActions extends Flux.Action {
             .then((resp) => {
                 return resp.json();
             })
-            .then((tourguides) => {
-                this.dispatch('MyStore.setTourGuides', tourguides);
+            .then((tourguide) => {
+                // this.dispatch('MyStore.setTourGuides', tourguide);
+                callback(tourguide);
             })
             .catch((error) => {
                 console.log("There was an error:", error);

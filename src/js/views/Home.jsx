@@ -40,6 +40,7 @@ export default class TourGuides extends Flux.View {
         this.setState({
             tourguides: MyStore.getTourGuides()
         });
+
         MyActions.allTourGuides();
 
         let tourguides = MyStore.getTourGuides();
@@ -94,10 +95,10 @@ export default class TourGuides extends Flux.View {
             <div className="navbar">
                 <NavBar activeNavbar="TWM" />
             </div>
-            <div className="jumbotron jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/952842/pexels-photo-952842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
+            <div className="jumbotron jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/269923/pexels-photo-269923.jpeg?auto=compress&cs=tinysrgb&h=350')"}}>
                 <div className="containertwm">
-                    <h1 className="display-4">Tour With Me</h1>
-                    <p className="lead">Because friends dont let friends take corporate tours</p>
+                    <h1 className="white display-4">Tour With Me</h1>
+                    <p className="white lead">Because friends dont let friends take corporate tours</p>
                 </div>
             </div>
             <div className="card-colums row mx-auto">

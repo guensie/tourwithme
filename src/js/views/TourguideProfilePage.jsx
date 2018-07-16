@@ -9,25 +9,20 @@ import TourGuideCard from '../components/TourGuideCard';
 import Tour from '../components/Tour';
 import Footer from '../components/Footer.jsx';
 import MyAction from "../actions/MyActions.jsx";
+import TourActions from "../actions/TourActions.jsx";
 //include images into your bundle
 import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class TourguideProfilePage extends React.Component {
     constructor() {
+        console.log('Hello this works');
         super();
         this.state = {
-            showModal: false,
-            tourguides: [
-                { id: '', name: 'john', title: 'Learn to Cook', oneliner: 'Learn to cook traditional Miami dishes at my restaurant ', aboutme: '', image: 'https://placeimg.com/640/480/people?t=1530318401281', age: '', gender: '' }
-            ]
+
+
         };
-        this.state = {
-            showModal: false,
-            tours: [
-                { cost: 100, guests: 2, tour_summary: 'Learn to cook traditional Miami dishes at my restaurant ', category: '', image: 'https://placeimg.com/640/480/people?t=1530318401281' }
-            ]
-        };
+
 
 
         // this.bindStore(MyStore, () => {
@@ -42,73 +37,111 @@ export class TourguideProfilePage extends React.Component {
 
 
     componentDidMount() {
+
+        console.log(this.props.match.params.id);
+        console.log(typeof(MyAction.oneTourGuide));
         this.setState({
-            tourguides: MyAction.oneTourGuide(),
-            tours: MyStore.getTours()
+            tourguide: MyAction.oneTourGuide(this.props.match.params.id),
+            // tour: TourActions.oneTour(this.props.match.params.id)
+
         });
 
 
 
-        let tourguides = MyStore.oneTourGuide();
-        let tours = MyStore.getTours();
-        let tourguideToEdit = this.setState({
-            title: tourguides.title,
-            // title: tours.title,
-            oneliner: tourguides.oneliner,
-            image: tourguides.image,
-            id: tourguides.id,
-            // id: tours.id,
-            category: tours.category,
-            gender: tourguides.gender,
-            age: tourguides.age,
-            guests: tours.guests,
-            cost: tours.cost,
-            name: tourguides.name,
-            aboutme: tours.aboutme
+        MyAction.oneTourGuide(this.props.match.params.id, (tourguide) => {
+            this.setState({
+
+                oneliner: tourguide.oneliner,
+                image: tourguide.image,
+                id: tourguide.id,
+                gender: tourguide.gender,
+                age: tourguide.age,
+                name: tourguide.name,
+                aboutme: tourguide.aboutme,
+                category: tourguide.category,
+                title: tourguide.title,
+                tour_summary: tourguide.tour_summary,
+                cost: tourguide.cost,
+                guests: tourguide.guests
+
+            });
         });
+        // TourActions.oneTour(this.props.match.params.id, (tour) => {
+        //     this.setState({
+        //         title: tour.title,
+        //         tour_summary: tour.tour_summary,
+        //         category: tour.category,
+        //         guests: tour.guests,
+        //         cost: tour.cost
+
+        //     });
+        // });
     }
+    // let tours = MyAction.getTours();
+
+    // aboutme: tours.aboutme
+
 
 
 
     render() {
-        const tours = this.state.tours.map((tours, i) => {
-            return <Tour key={i} 
-                                id={tours.id}
-                                cost={tours.cost}
-                                // title={tours.title} 
-                                guests={tours.guests} 
-                                image={tours.image}
-                                category={tours.category}
-                                tour_summary={tours.tour_summary}
-                                onDelete={(id) => this.deleteTour(id)}/>;
-        });
+        // const tours = this.state.tours.map((tours, i) => {
+        //     return <Tour key={i} 
+        //                         id={tours.id}
+        //                         cost={tours.cost}
+        //                         // title={tours.title} 
+        //                         guests={tours.guests} 
+        //                         image={tours.image}
+        //                         category={tours.category}
+        //                         tour_summary={tours.tour_summary}
+        //                         onDelete={(id) => this.deleteTour(id)}/>;
+        // });
         return (
             <div>
             <div className="TourguideProfilePage">
                 <div>
-                    <NavBar activeNavbar="BECOME"/>
+                    <NavBar activeNavbar="My Profile"/>
                 </div>
                 <div className="tourguideprofilejumbotron">
-                    <h1 className="display-4">{this.props.oneliner}</h1>
-                    <p className="lead"><b>{this.props.name}</b></p>
-                    <img className="card-img-top" id="profileImage" src={this.props.image} alt="Card image cap"></img>
+                    <h3 className="display-4" id="oneliner">{this.state.oneliner}</h3>
+                    <p className="lead name"><b>{this.state.name}</b></p>
+                    <img className="card-img-top" id="profileImage" src={this.state.image} alt="Card image cap"></img>
                     <hr className="my-4"></hr>
-                    <p><b>About Me:</b>{this.props.aboutme}</p>
+                    <p className="aboutme"><b>About Me: </b>{this.state.aboutme}</p>
                 </div>
-                <Tour />
+                <div className='tourDetails'>
+                <div className="tour-jumbotron">
+                <h2 className="tourtitle"> About My Tour </h2>
                 
+                <ul className="list-group" id="makecenter">
+                    <li className="list-group-item"><b>{this.state.title}</b></li>
+                    <li className="list-group-item"><b>What we will do:</b>{this.state.tour_summary}</li>
+                    <li className="list-group-item"><b>Cost: </b> {this.state.cost} </li>
+                    <li className="list-group-item"> <b>Number of guests: </b> {this.state.guests}</li>
+                    <li className="list-group-item"> <b> Category: </b> {this.state.category}</li>
+                    
+                </ul>
+
+                <li><button type="button" id="makeinfo" className="btn btn-info"onClick={() => this.props.history.push("/PaymentPortal")}>BOOK ME</button></li>  
+                </div>
+                </div>
+                </div>
+                
+               
 
             </div>
 
-        
-        </div>
+
+
         );
     }
 }
 
+
+
 TourguideProfilePage.propTypes = {
     image: PropTypes.string,
-    // title: PropTypes.string,
+    title: PropTypes.string,
     tour_summary: PropTypes.string,
     rating: PropTypes.number,
     name: PropTypes.string,
