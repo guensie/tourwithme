@@ -23,7 +23,7 @@ export class TourguideProfilePage extends React.Component {
                         <a className="nav-item nav-link" href="/becomeatourguide">Become a Tour Guide</a>
                         <a className="nav-item nav-link" href="/touristsignup">Tourist Signup</a>
                         <a className="nav-item nav-link" href="/tourguideprofilepage">My Tourguide Profile</a>
-                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a>
+                        <a className="nav-item nav-link" href="/touristprofilepage">My Tourist Profile</a> 
                     </div>   
                 </div>
             </nav>
@@ -32,7 +32,7 @@ export class TourguideProfilePage extends React.Component {
                 <p className="lead"><b>Hosted by Adam Lake</b></p>
                 <img className="card-img-top" id="profileImage" src="https://expertbeacon.com/sites/default/files/advice_for_men_on_selecting_your_online_dating_profile_photo.jpg" alt="Card image cap"></img>
                 <hr className="my-4"></hr>
-                <p><b>About your host</b> - I was fortunate to b.e born and raised in Miami.
+                <p><b>About your host</b> - I was fortunate to be born and raised in Miami.
                    I started surfing at a very young age, and later, after realizing I wanted to share my passion for surfing with other people, 
                    I became specialized in teaching this amazing sport.</p>
             </div>
@@ -49,88 +49,9 @@ export class TourguideProfilePage extends React.Component {
                     <li className="list-group-item"> <b> Upcoming Availability</b></li>
                 </ul>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-    	               table class="table-condensed table-bordered table-striped">
-                <thead>
-                    <tr>
-                      <th colspan="7">
-                        <span class="btn-group">
-                            <a class="btn"><i class="icon-chevron-left"></i></a>
-                        	<a class="btn active">February 2012</a>
-                        	<a class="btn"><i class="icon-chevron-right"></i></a>
-                        </span>
-                      </th>
-                    </tr>
-                    <tr>
-                        <th>Su</th>
-                        <th>Mo</th>
-                        <th>Tu</th>
-                        <th>We</th>
-                        <th>Th</th>
-                        <th>Fr</th>
-                        <th>Sa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="muted">29</td>
-                        <td class="muted">30</td>
-                        <td class="muted">31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td class="btn-primary"><strong>20</strong></td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td class="muted">1</td>
-                        <td class="muted">2</td>
-                        <td class="muted">3</td>
-                    </tr>
-                </tbody>
-            </table>
-            <input type="book" value="BOOK">
+            <input type="book" value="BOOK"></input>
         </div>
-	</div>
-</div>
-
-</div>
-          
-
-
-      
+ 
          );
     }
   }
