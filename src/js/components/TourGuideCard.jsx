@@ -27,7 +27,7 @@ class TourGuideCard extends React.Component {
                     <FontAwesomeIcon icon={faStar} />
                     <p className="booknow">
                         
-                        <Link className="btn-info" to={"/tourguideprofilepage/" + this.props.id} >Book Me </Link>
+                        <Link className="btn btn-info" to={"/tourguideprofilepage/" + this.props.id} >Book Me </Link>
                     </p>   
                 </div> 
             </div>

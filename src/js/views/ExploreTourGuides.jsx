@@ -18,34 +18,39 @@ export default class TourGuides extends Flux.View {
         super();
         this.state = {
             showModal: false,
+            renderedtourguides: [],
             tourguides: [
                 { id: '', name: 'john', title: 'Learn to Cook', oneliner: 'Learn to cook traditional Miami dishes at my restaurant ', image: 'https://placeimg.com/640/480/people?t=1530318401281', category: '', age: '', guests: '', cost: '', gender: '' },
                 { id: '', name: 'jane', title: 'Photography Lesson', oneliner: 'Walk around Miamis most scenic spots and learn how to capture them with a camera', image: 'https://placeimg.com/640/480/people?t=1530318434719', category: '', age: '', guests: '', cost: '', gender: '' },
                 { id: '', name: 'lacy', title: 'Cigar Factory Tour', oneliner: 'Tour a cuban style cigar factory with me and the owner of Miami Cigars ', image: 'https://randomuser.me/api/portraits/men/1.jpg', category: '', age: '', guests: '', cost: '', gender: '' }
             ]
         };
+
         this.bindStore(MyStore, () => {
             this.setState({
-                tourguides: MyStore.getTourGuides()
+                tourguides: MyStore.getTourGuides(),
+                renderedtourguides: MyStore.getTourGuides()
             });
 
         });
     }
 
-
-    foodFilter() {
-        let tourguides = MyStore.getTourGuides();
-        if (tourguides.category === 'Food and drink') {
-            tourguides.push(tourguides);
-
-        }
+    filter(category) {
+        this.setState({
+            renderedtourguides: this.state.tourguides.filter(tourguide => tourguide.category == category || category == 'all')
+        });
     }
+
+
+
+
     // Function that takes in filter options, that resets new array Write it Here!!!!
 
 
     componentDidMount() {
         this.setState({
-            tourguides: MyStore.getTourGuides()
+            tourguides: MyStore.getTourGuides(),
+            renderedtourguides: MyStore.getTourGuides()
         });
 
         MyActions.allTourGuides();
@@ -73,12 +78,18 @@ export default class TourGuides extends Flux.View {
     //     MyAction.editTourGuide(id);  
     // }
 
+    // foodFilter() {
+    //         let tourguides = MyStore.getTourGuides();
+    //         if (tourguides.category === 'Food and drink') {
+    //             tourguides.push(tourguides);
 
+    //         }
+    //     }
 
 
     render() {
 
-        const tourguidesInHTML = this.state.tourguides.map((tourguide, i) => {
+        const tourguidesInHTML = this.state.renderedtourguides.map((tourguide, i) => {
             return <TourGuideCard key={i} 
                                 id={tourguide.id}
                                 title={tourguide.title} 
@@ -92,6 +103,7 @@ export default class TourGuides extends Flux.View {
                                 name={tourguide.name}
                                 onDelete={(id) => this.deleteTourGuide(id)}/>;
 
+
         });
         return (
             <div className="exploreTourGuides" id='app'>
@@ -104,7 +116,7 @@ export default class TourGuides extends Flux.View {
                     <p className="white lead">Because friends dont let friends take corporate tours</p>
                 </div>
             </div>
-            <Filter  />
+            <Filter applyFilter={(category)=>this.filter(category)} clearFilter={(category)=>this.filter(category)} />
             <div className="card-columns row mx-auto">
                 {tourguidesInHTML}
             </div>   
