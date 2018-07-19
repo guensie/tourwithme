@@ -10,9 +10,9 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class PaymentPortal extends React.Component {
-  render() {
-    return (
-        <div>
+    render() {
+        return (
+            <div>
             <NavBar />
             
             <div className="row">    
@@ -89,21 +89,18 @@ export class PaymentPortal extends React.Component {
                                 <b>4</b>
                             </span>
                         </h4>
-                        <p><a href="#">Product 1</a> <span className="price">$15</span></p>
-                        <p><a href="#">Product 2</a> <span className="price">$5</span></p>
-                        <p><a href="#">Product 3</a> <span className="price">$8</span></p>
-                        <p><a href="#">Product 4</a> <span className="price">$2</span></p>
+                        <p><a href="#">Tour</a> <span className="price">$50</span></p>
                         <hr></hr>
-                        <p>Total <span className="price" style={{color:"black"}}><b>$30</b></span></p>
+                        <p>Total <span className="price" style={{color:"black"}}><b>$50</b></span></p>
                     </div>
                 </div>
             </div>
         </div>
 
-            
 
-         );
+
+        );
     }
-  }
+}
 
 export default PaymentPortal;

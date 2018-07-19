@@ -1,25 +1,30 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+.jumbotron.jumbotron-fluid {
+    height: 170px;
+}
 
-.card{
+.card {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 1px;
     padding-right: 1px;
+    height: 500px;
+
 }
 
-.card-img-top{
-    height:250px;
+.card-img-top {
+    height: 250px;
 }
 
-.jumbotron{
+.jumbotron {
     padding-bottom: 0;
     padding-top: 0;
     color: white;
     font-family: 'Merienda', cursive;
 }
 
-.spotlight{
+.spotlight {
     text-align: center;
     background-color: black;
     color: white;
@@ -30,38 +35,50 @@
     color: #4286f4;
 }
 
-.dropdown{
+.dropdown {
     text-align: center;
     background-color: #b1e6ef;
 }
 
-#twm{
-font-family: 'Merienda', cursive;
- color:#40b29c;   
+#twm {
+    font-family: 'Merienda', cursive;
+    color: black;
 }
 
-.jumbotron1, .jumbotron2, .jumbotron3, .jumbotron4{
+.jumbotron1,
+.jumbotron2,
+.jumbotron3,
+.jumbotron4 {
     height: 600px;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: 'Merienda', cursive;
 }
 
-#intro1, .jumbotronc{
+#intro1,
+.jumbotronc {
     color: white;
-    
+
 }
 
-#profileImage{
-    height:340px;
-    width:275px;
-}
-
-
-.filterButtons{
-margin-right: 14px;
+#profileImage {
+    height: 340px;
+    width: 275px;
 }
 
 
+.filterButtons {
+    margin-right: 14px;
+}
 
+.active {
+    background-color: #17a2b8;
+}
 
+#dropdownMenuButton {
+    padding: 9px;
+}
+
+.tourtitle {
+    color: #17a2b8;
+}

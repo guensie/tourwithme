@@ -3,11 +3,13 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
+
 class Footer extends React.Component{
     
     render(){
         return (
-            <footer className="bg-dark text-white mt-4">
+        
+            <footer className="bg-dark text-white mt-4" id="footer">
                 <div className="container-fluid py-3">
                     <div className="row">
                         <div className="col-md-3">
@@ -30,7 +32,7 @@ class Footer extends React.Component{
                             <div className="input-group mb-3">
                                 <div>
                                     <div className="input-group-prepend">
-                                        <button className="btn btn-outline-secondary" type="button"><a className="nav-link" href="/ThankYouMailingList">Join Our Mailing List</a></button>
+                                        <button className="btnjoin btn-outline-secondary" id="join-list" type="button"><a className="nav-link" href="/ThankYouMailingList">Join Our Mailing List</a></button>
                                     </div>
                                     <input type="text" className="form-control" placeholder="email address" aria-label="" aria-describedby="basic-addon1" />
                                     <p className="list-text">Sign up to get the latest news and up to date information.</p>
@@ -41,6 +43,7 @@ class Footer extends React.Component{
                     </div>
                 </div>
             </footer>
+            
                 );
     }
 }

@@ -3,6 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fas } from '@fortawesome/fontawesome-free-solid';
+// import { far } from '@fortawesome/fontawesome-free-regular';
+// // import { fab } from '@fortawesome/fontawesome-free-brands';
+// library.add(fas, far);
+
 //include jquery into the bundle and store its contents into the $ variable
 import $ from "jquery";
 //include bootstrap npm library into the bundle
@@ -18,9 +24,9 @@ import '../styles/_footer.scss';
 import '../styles/_touristsignup.scss';
 import '../styles/_tourguidesignup.scss';
 import '../styles/_termsandprivacy.scss';
-import  '../styles/_thankyoumailinglist.scss';
+import '../styles/_thankyoumailinglist.scss';
 import '../styles/_paymentportal.scss';
-import  '../styles/tourguideprofilepage.scss';
+import '../styles/tourguideprofilepage.scss';
 import '../styles/touristprofilepage.scss';
 
 
@@ -32,7 +38,7 @@ import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
 
 
 
-// import { ExploreTourGuides } from './views/ExploreTourGuides.jsx';
+
 //render your react application
 
 
@@ -43,18 +49,11 @@ import { TourguideProfilePage } from './views/TourguideProfilePage.jsx';
 import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
 import { PaymentPortal } from './views/PaymentPortal.jsx';
-
+import { TourGuides } from './views/TourGuides.jsx';
+import { CreateProfile } from './views/CreateProfile.jsx';
+import MyAction from "./actions/MyActions.jsx";
+import TourActions from "./actions/TourActions.jsx";
 ReactDOM.render(
     <Layout />,
-       document.querySelector('#app')
+    document.querySelector('#app')
 );
-//render your react application
-// ReactDOM.render(
-//     <ExploreTourGuides />,
-//     <TouristSignUp />,
-//     <TourguideSignUp />,
-//     <TouristProfilePage />,
-//     <TourguideProfilePage />,
-    
-    
-

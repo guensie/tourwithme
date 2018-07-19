@@ -12,8 +12,17 @@ import { TourguideProfilePage } from './views/TourguideProfilePage.jsx';
 import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
 import { PaymentPortal } from './views/PaymentPortal.jsx';
+import TourGuides from './views/TourGuides.jsx';
+import MyAction from "./actions/MyActions.jsx";
+import CreateProfile from "./views/CreateProfile.jsx";
+import TourActions from "./actions/TourActions.jsx";
 
 export default class Layout extends Flux.View {
+    constructor() {
+        super();
+        // MyAction.allTourGuides(); 
+    }
+
     render() {
         return (
             <div>
@@ -28,10 +37,12 @@ export default class Layout extends Flux.View {
                             <Route exact path="/touristsignup" component={TouristSignUp} />
                             <Route exact path="/tourguidesignup" component={TourGuideSignUp} />
                             <Route exact path="/touristprofilepage" component={TouristProfilePage} />
-                            <Route exact path="/tourguideprofilepage" component={TourguideProfilePage} />
+                            <Route exact path="/tourguideprofilepage/:id" component={TourguideProfilePage} />
                             <Route exact path="/TermsAndPrivacy" component={TermsAndPrivacy} />
                             <Route exact path="/ThankYouMailingList" component={ThankYouMailingList} />
                             <Route exact path="/PaymentPortal" component={PaymentPortal} />
+                           
+                            <Route exact path="/edit/:id" component={CreateProfile} />
                             <Route render={() => <h1>Not found!</h1>} />
                         </Switch>
                     </div>
@@ -40,4 +51,3 @@ export default class Layout extends Flux.View {
         );
     }
 }
-
