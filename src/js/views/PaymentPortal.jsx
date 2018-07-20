@@ -76,7 +76,7 @@ export class PaymentPortal extends React.Component {
                             <label>
                                 <input type="checkbox" checked="checked" name="sameadr"/> Shipping address same as billing
                             </label>
-                            <input type="submit" value="Continue to checkout" className="btn"></input>
+                            <input type="submit" value="Continue to checkout" className="btn btn-success"></input>
                         </form>
                     </div>
                 </div>
@@ -96,8 +96,6 @@ export class PaymentPortal extends React.Component {
                 </div>
             </div>
         </div>
-
-
 
         );
     }
