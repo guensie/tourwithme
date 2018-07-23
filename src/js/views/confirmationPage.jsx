@@ -8,22 +8,21 @@ import { Link } from "react-router-dom";
 import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
-export class ThankYouMailingList extends React.Component {
+export class Confirmation extends React.Component {
     render() {
         return (
-            <div className="thank-you">
-            <div className="thank-you-jumbotron-fluid">
-                <h1 className="display-4" id="thankyou">Thank You For Joining Our Mailing List!</h1>
-                <p className="lead">Check your inbox for the lastest updates and upcoming promotions.</p>
+            <div className="confirmation">
+            <div className="confirmation-jumbotron-fluid">
+                <h1 className="display-4" id="confirmation">Your Tour Has Been Booked!</h1>
+                <p className="lead">Check your inbox for confirmation number and further instructions.</p>
                 <hr className="my-4" />
-                <p>In the mean time feel free to hit the back button and explore more of Tour With Me</p>
+                <p>In the mean time click below to return home</p>
                 <button type="button" className="btn btn-info btn-lg btn-block" onClick={() => this.props.history.push("/Home")}>Return to homepage</button>
             </div>
 
-        
             </div>
         );
     }
 }
 
-export default ThankYouMailingList;
+export default Confirmation;

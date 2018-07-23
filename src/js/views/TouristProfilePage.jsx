@@ -12,22 +12,24 @@ export class TouristProfilePage extends React.Component {
     render() {
         return (
             <div>
-            <NavBar />
+            <NavBar activeNavbar="TOURIST"/>
             <div className="TouristProfilePage">  
-                <div className="card" style={{width: "18rem"}}>
-                    <div clas><h1>My Profile</h1></div>
+                <div className="card" id="touristcard">
+                    <div className="myprofile"><h1>My Profile</h1></div>
                     <img className="card-img-top" id="profileImage" src="https://images.pexels.com/photos/972884/pexels-photo-972884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap"></img>
                     <div className="card-body">   
                         <p className="card-text">My name is Ashley, I love to travel to Miami to escape the the harsh weather in Alaska:).</p>
+                        <p className="upcomingTours"><b>Upcoming Tours:</b> None </p>
                     </div>   
                 </div>
-                <ul className="list-group">
-                    <li className="list-group-item">Name: Jody-ann Johnson </li>
-                    <li className="list-group-item">Age: 28 years old </li>
-                    <li className="list-group-item">Gender: Female </li>
-                    <li className="list-group-item">Job Description: Business Systems Analyst</li>
-                    <li className="list-group-item">Hobbies: Travelling, computer coding, surfing and latin dancing </li>
-                    <li className="list-group-item"> Favourite Quote: Seize the moment everytime...</li>
+                <ul className="list-group" id="touristprofile">
+                    <li className="list-group-item"><b>Name:</b> Jody-ann Johnson </li>
+                    <li className="list-group-item"><b> Age:</b> 28 years old </li>
+                    <li className="list-group-item"><b>Gender:</b> Female </li>
+                    <li className="list-group-item"><b>Job Description:</b> Business Systems Analyst</li>
+                    <li className="list-group-item"><b>Hobbies:</b> Travelling, computer coding, surfing and latin dancing </li>
+                    <li className="list-group-item"><b> Favourite Quote:</b> Seize the moment everytime...</li>
+                    <li className="list-group-item"><b>Upcoming Tours:</b> None </li>
                     <li><button type="button" className="btn btn-info">Edit Profile</button></li>
                 </ul>  
             </div> 

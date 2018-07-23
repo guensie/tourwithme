@@ -11,11 +11,15 @@ import { TouristProfilePage } from './views/TouristProfilePage.jsx';
 import { TourguideProfilePage } from './views/TourguideProfilePage.jsx';
 import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
+import { Thankyoutourguide } from './views/Thankyoutourguide.jsx';
+import { Login } from './views/Login.jsx';
+import { confirmationPage } from './views/confirmationPage.jsx';
 import { PaymentPortal } from './views/PaymentPortal.jsx';
 import TourGuides from './views/TourGuides.jsx';
 import MyAction from "./actions/MyActions.jsx";
 import CreateProfile from "./views/CreateProfile.jsx";
 import TourActions from "./actions/TourActions.jsx";
+
 
 export default class Layout extends Flux.View {
     constructor() {
@@ -40,7 +44,10 @@ export default class Layout extends Flux.View {
                             <Route exact path="/tourguideprofilepage/:id" component={TourguideProfilePage} />
                             <Route exact path="/TermsAndPrivacy" component={TermsAndPrivacy} />
                             <Route exact path="/ThankYouMailingList" component={ThankYouMailingList} />
+                            <Route exact path="/Thankyoutourguide" component={Thankyoutourguide} />
+                            <Route exact path="/Login" component={Login} />
                             <Route exact path="/PaymentPortal" component={PaymentPortal} />
+                            <Route exact path="/confirmationPage" component={confirmationPage} />
                            
                             <Route exact path="/edit/:id" component={CreateProfile} />
                             <Route render={() => <h1>Not found!</h1>} />

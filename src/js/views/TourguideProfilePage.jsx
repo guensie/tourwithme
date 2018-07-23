@@ -12,11 +12,12 @@ import MyAction from "../actions/MyActions.jsx";
 import TourActions from "../actions/TourActions.jsx";
 //include images into your bundle
 import ButtonComponent from '../components/ButtonComponent.jsx';
+
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class TourguideProfilePage extends React.Component {
     constructor() {
-        console.log('Hello this works');
+        // console.log('Hello this works');
         super();
         this.state = {
 
@@ -41,7 +42,7 @@ export class TourguideProfilePage extends React.Component {
         console.log(this.props.match.params.id);
         console.log(typeof(MyAction.oneTourGuide));
         this.setState({
-            tourguide: MyAction.oneTourGuide(this.props.match.params.id),
+            tourguide: MyAction.oneTourGuide(this.props.match.params.id)
             // tour: TourActions.oneTour(this.props.match.params.id)
 
         });

@@ -9,10 +9,10 @@ import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
 export class TouristSignUp extends React.Component {
-  render() {
-    return (
-        
-        <div>
+    render() {
+        return (
+
+            <div>
             <NavBar />
 
             <div id="TouristSignup" className="tab-pane"> 
@@ -34,8 +34,11 @@ export class TouristSignUp extends React.Component {
                         <input type="password" className="form-control" placeholder=""></input>
                     </div>
                     <div className="form-check">
-                        <button type="submit" className="btn btn-login float-right">REGISTER</button>
+                        <button onClick={() => this.props.history.push("/thankyoutourguide")} type="submit" className="btn btn-login float-right">REGISTER</button>
                     </div>
+                    <div className="container signin">
+                    <p>Already have an account? <button onClick={() => this.props.history.push("/Login")} type="submit" className="signinbutton">Sign in</button>.</p>
+                    </div> 
                 </form>
             </div>
             <form>
@@ -71,16 +74,14 @@ export class TouristSignUp extends React.Component {
             </form>
 
         </div>
-        
-        
-        
-        
-        
-      
-    );
-  }
+
+
+
+
+
+
+        );
+    }
 }
 
 export default TouristSignUp;
-
-

@@ -114,12 +114,27 @@ class TourGuideActions extends Flux.Action {
 
     }
 
+
+
+    createTourguide(tourguide) {
+
+
+        fetch("https://backend-tour-with-me-guensie.c9users.io/tourguide/", {
+                method: 'PUT', // or 'PUT'
+                body: JSON.stringify(tourguide), // data can be `string` or {object}!
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            })
+            .then(res => res.json());
+
+        let tourguides = MyStore.getTourGuides();
+        tourguides.push(tourguide);
+        this.dispatch('MyStore.setTourGuides', tourguides);
+    }
+
 }
-// getTourGuides(){
-//     return this.state.tourguides;
-// } 
-
-
 
 
 
