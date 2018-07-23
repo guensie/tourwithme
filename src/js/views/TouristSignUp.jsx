@@ -48,15 +48,15 @@ export class TouristSignUp extends React.Component {
                     <label htmlFor="female">Female</label>
                     <input id="female" type="radio" className="gender" value="f"></input>
                 </div>
-                <p>Prefered Lanaguage:
+                <p>Prefered Language:
                     <select className="language">
                         <option value="English">English</option>
                         <option value="Spanish">Spanish</option>
                         <option value="French">French</option>
                     </select>
                 </p>
-                <p>Prefered Cuurency:
-                    <select className="Prefered Currency">
+                <p>Prefered Currency:
+                    <select className="Preferred Currency">
                         <option value="Argentine Peso"></option>
                         <option value="Brazillian real">Brazillian real</option>
                         <option value="Pound Sterling">Pound Sterling</option>

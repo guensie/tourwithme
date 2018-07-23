@@ -63,11 +63,11 @@ export class BookExperience extends React.Component {
                 <div class="total">
                     <div class="total-item">
                         <label>Subtotal</label>
-                        <div class="total-value" id="cart-subtotal">30.00</div>
+                        <div class="total-value" id="cart-subtotal">15.00</div>
                     </div>
                     <div class="total-item">
                         <label>Tax (5%)</label>
-                        <div class="total-value" id="cart-tax">3.60</div>
+                        <div class="total-value" id="cart-tax">0.75</div>
                     </div>
                     <div class="total-item">
                         <label>Shipping</label>
@@ -75,10 +75,9 @@ export class BookExperience extends React.Component {
                     </div>
                     <div class="total-item totals-item-total">
                         <label>Grand Total</label>
-                        <div class="total-value" id="cart-total">63.60</div>
+                        <div class="total-value" id="cart-total">30.00</div>
                     </div>
-                </div>
-      
+                </div> 
                 <button class="checkout">Checkout</button>
 
             </div>

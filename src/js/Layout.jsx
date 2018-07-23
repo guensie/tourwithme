@@ -21,6 +21,7 @@ import CreateProfile from "./views/CreateProfile.jsx";
 import TourActions from "./actions/TourActions.jsx";
 
 
+
 export default class Layout extends Flux.View {
     constructor() {
         super();
