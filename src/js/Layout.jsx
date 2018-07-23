@@ -17,6 +17,8 @@ import MyAction from "./actions/MyActions.jsx";
 import CreateProfile from "./views/CreateProfile.jsx";
 import TourActions from "./actions/TourActions.jsx";
 
+                            
+
 export default class Layout extends Flux.View {
     constructor() {
         super();
@@ -41,7 +43,7 @@ export default class Layout extends Flux.View {
                             <Route exact path="/TermsAndPrivacy" component={TermsAndPrivacy} />
                             <Route exact path="/ThankYouMailingList" component={ThankYouMailingList} />
                             <Route exact path="/PaymentPortal" component={PaymentPortal} />
-                           
+                            
                             <Route exact path="/edit/:id" component={CreateProfile} />
                             <Route render={() => <h1>Not found!</h1>} />
                         </Switch>
