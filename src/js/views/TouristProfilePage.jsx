@@ -22,7 +22,7 @@ export class TouristProfilePage extends React.Component {
                     </div>   
                 </div>
                 <ul className="list-group">
-                    <li className="list-group-item">Name: Jody-ann Johnson </li>
+                    <li className="list-group-item">Name: Ashley Johnson </li>
                     <li className="list-group-item">Age: 28 years old </li>
                     <li className="list-group-item">Gender: Female </li>
                     <li className="list-group-item">Job Description: Business Systems Analyst</li>

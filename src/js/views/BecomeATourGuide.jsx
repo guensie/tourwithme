@@ -47,7 +47,7 @@ export class BecomeATourGuide extends React.Component {
                     <div className="container"> 
                         <h1 className="display-4">What Tour With Me Covers</h1>
                         <p className="lead">Tour With Me will provide marketing, admin, payment collection, and the tools you need to create an attractive profile and get you on your way to earning money as a tour guide.</p>
-                        <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
+                        <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button> 
                     </div>
                 </div>
             </div>
