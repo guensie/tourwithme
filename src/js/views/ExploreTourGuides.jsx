@@ -108,7 +108,7 @@ export default class TourGuides extends Flux.View {
         return (
             <div className="exploreTourGuides" id='app'>
             <div className="navbar">
-                <NavBar activeNavbar="ExploreTourGuides" />
+                <NavBar activeNavbar="EXPLORE" />
             </div>
             <div className="jumbotron jumbotron-fluid" style = { { backgroundImage: "url('https://images.pexels.com/photos/269923/pexels-photo-269923.jpeg?auto=compress&cs=tinysrgb&h=350')" } }>
                 <div className="containertwm">

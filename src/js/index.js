@@ -28,6 +28,8 @@ import '../styles/_thankyoumailinglist.scss';
 import '../styles/_paymentportal.scss';
 import '../styles/tourguideprofilepage.scss';
 import '../styles/touristprofilepage.scss';
+import '../styles/login.scss';
+
 
 
 
@@ -48,13 +50,14 @@ import { TouristProfilePage } from './views/TouristProfilePage.jsx';
 import { TourguideProfilePage } from './views/TourguideProfilePage.jsx';
 import { TermsAndPrivacy } from './views/TermsAndPrivacy.jsx';
 import { ThankYouMailingList } from './views/ThankYouMailingList.jsx';
+import { Thankyoutourguide } from './views/Thankyoutourguide.jsx';
+import { Login } from './views/Login.jsx';
 import { PaymentPortal } from './views/PaymentPortal.jsx';
 import { TourGuides } from './views/TourGuides.jsx';
 import { CreateProfile } from './views/CreateProfile.jsx';
 import MyAction from "./actions/MyActions.jsx";
 import TourActions from "./actions/TourActions.jsx";
-
-
+import { confirmationPage } from './views/confirmationPage.jsx';
 ReactDOM.render(
     <Layout />,
     document.querySelector('#app')
