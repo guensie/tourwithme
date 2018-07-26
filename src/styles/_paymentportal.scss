@@ -93,4 +93,18 @@ span.price {
 
 #confirmation {
   font-size: 48px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+#confirmation2 {
+  font-size: 30px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.modal-backdrop {
+  display: none !important;
 }

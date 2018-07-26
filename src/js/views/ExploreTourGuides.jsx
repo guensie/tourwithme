@@ -100,6 +100,7 @@ export default class TourGuides extends Flux.View {
                                 age={tourguide.age}
                                 guests={tourguide.guests}
                                 cost={tourguide.cost}
+                                rating={tourguide.rating}
                                 name={tourguide.name}
                                 onDelete={(id) => this.deleteTourGuide(id)}/>;
 

@@ -8,15 +8,15 @@ import { Link } from "react-router-dom";
 import ButtonComponent from '../components/ButtonComponent.jsx';
 // import ExploreTourGuides from '/exploretourguides.html';
 
-export class Confirmation extends React.Component {
+export class confirmationPage extends Flux.View {
     render() {
         return (
             <div className="confirmation">
             <div className="confirmation-jumbotron-fluid">
                 <h1 className="display-4" id="confirmation">Your Tour Has Been Booked!</h1>
-                <p className="lead">Check your inbox for confirmation number and further instructions.</p>
+                <p className="lead" id="confirmation2">Check your inbox for confirmation number and further instructions.</p>
                 <hr className="my-4" />
-                <p>In the mean time click below to return home</p>
+                <p id="confirmation2">In the mean time click below to return home</p>
                 <button type="button" className="btn btn-info btn-lg btn-block" onClick={() => this.props.history.push("/Home")}>Return to homepage</button>
             </div>
 
@@ -25,4 +25,4 @@ export class Confirmation extends React.Component {
     }
 }
 
-export default Confirmation;
+export default confirmationPage;

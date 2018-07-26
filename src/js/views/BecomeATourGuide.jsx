@@ -22,7 +22,7 @@ export class BecomeATourGuide extends React.Component {
             <div className="jumbotron1 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/247929/pexels-photo-247929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                 <div className="containertwm" id="intro1">
                     <h1 className="white display-4">Become a tour guide with TWM and share your passion for the city.</h1>
-                    <p className="lead">With TWM you can make money on your own terms doing what you love.</p>
+                    <p className="white display-4">With TWM you can make money on your own terms doing what you love.</p>
                     <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
                 </div>
             </div>
@@ -30,7 +30,7 @@ export class BecomeATourGuide extends React.Component {
                 <div className="jumbotron2 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/346808/pexels-photo-346808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                     <div className="container">
                         <h1 className="display-4">What is Tour With Me?</h1>
-                        <p className="lead">Tour With Me is the best local tour company by locals for tourists.</p>
+                        <p className="lead">Tour With Me is the best local tour company by locals for tourists. You create your own tour on your own terms and advertise it on our site for people looking for a personaly curated tour</p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export class BecomeATourGuide extends React.Component {
                 <div className="jumbotron4 jumbotron-fluid" style={{backgroundImage: "url('https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}>
                     <div className="container"> 
                         <h1 className="display-4">What Tour With Me Covers</h1>
-                        <p className="lead">Tour With Me will provide marketing, admin, payment collection, and the tools you need to create an attractive profile and get you on your way to earning money as a tour guide.</p>
+                        <p className="regularText">Tour With Me will provide marketing, admin, payment collection, and the tools you need to create an attractive profile and get you on your way to earning money as a tour guide.</p>
                         <button onClick={() => this.props.history.push("/tourguidesignup")}>Sign up Now</button>
                     </div>
                 </div>

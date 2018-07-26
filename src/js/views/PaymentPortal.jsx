@@ -72,7 +72,7 @@ export class PaymentPortal extends React.Component {
 
                             </div>
                             <label>
-                                <input type="checkbox" checked="checked" name="sameadr"/> Shipping address same as billing
+                                <input type="checkbox" checked="defaultChecked" name="sameadr"/> Shipping address same as billing
                             </label>
                         </form>
                         <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -96,7 +96,7 @@ export class PaymentPortal extends React.Component {
                                <p> Cost: $45.00</p>
                                <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-dismiss="modal">No</button>
-                                <button type="button" className="btn btn-primary">Yes, continue</button>
+                                <button type="button" className="btn btn-primary" onClick={() => this.props.history.push("/confirmationPage")}>Yes, continue</button>
                               </div>
                             </div>
                           </div>
@@ -120,7 +120,7 @@ export class PaymentPortal extends React.Component {
         </div>
     </div>
 
-      
+
 
 
         );
