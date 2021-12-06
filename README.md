@@ -28,4 +28,6 @@ PARAMS:
 -number of guests: filter tour guides by number of guests allowed on tour [1-2,2-3,3-4,5-6]
 Update Tour guide list: Post: /apis/tour-guide-list/edit
 
+Testing the update function
+
 
